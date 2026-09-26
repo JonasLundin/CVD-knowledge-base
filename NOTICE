@@ -2,7 +2,11 @@
 
 ## Primary Sources
 
-Concepts cite legislation, rules, and official material published by public institutions and standards bodies. This bundle supplies condensed summaries, source attribution, links, and an indication that the material was changed. Each source keeps its own reuse terms; the sections below name the terms that apply to the source families this bundle covers.
+Concepts cite legislation, rules, specifications, and official material published by public institutions, programmes, and standards bodies. This bundle supplies condensed summaries, source attribution, links, and an indication that the material was changed. Each source keeps its own reuse terms; the sections below name the terms that apply to the source families this bundle covers.
+
+### CVE Program Material
+
+CVE and the CVE logo are registered trademarks of The MITRE Corporation. CVE Program content, including the CNA Operational Rules, the CVE Record Format and CVE Records, is used under the CVE Program Terms of Use (https://www.cve.org/Legal/TermsOfUse). This bundle summarises and links; it does not republish CVE Records.
 
 ### European Union Material
 
@@ -13,10 +17,18 @@ Unless a source states otherwise, reuse of EUR-Lex legal documents and European 
 
 Only the electronic Official Journal on EUR-Lex is authentic and produces legal effects.
 
+### United States Government Works
+
+Publications of NIST, CISA and NTIA are works of the United States Government and are not subject to copyright protection in the United States (17 U.S.C. § 105). The agencies request attribution, which this bundle gives on every citing concept. Use of their material does not imply endorsement.
+
+### Specification Publishers
+
+OASIS (CSAF), FIRST.Org, Inc. (CVSS, EPSS), the Linux Foundation and its projects (SPDX, OpenSSF, SLSA, Sigstore, in-toto, OpenVEX), OWASP (CycloneDX) and Ecma International (ECMA-424) publish their specifications under their own licences and intellectual-property policies. This bundle records identifiers, versions, scope and links, and summarises in original wording under those terms. Consult each publisher's site for the licence that applies to the specification text itself.
+
 ## Standards
 
 ISO, IEC, CEN, CENELEC, ETSI, and national standards remain subject to their publishers' rights. This repository records identifiers, lifecycle facts, public scope information, relationships, and links. It does not license or redistribute normative standards text, tables, figures, draft files, or comment spreadsheets.
 
 ## Trademarks And Independence
 
-Names and marks belong to their respective owners. No institutional logos are included. This independent project is not affiliated with or endorsed by any of the institutions, authorities, programmes, or standards bodies whose material it cites, nor by Google Cloud or Meerkat.
+Names and marks belong to their respective owners. No institutional logos are included. This independent project is not affiliated with or endorsed by The MITRE Corporation, the CVE Program, ENISA, CISA, CERT/CC, FIRST, OASIS, the European Commission, ISO, IEC, ETSI, Google Cloud, or Meerkat.

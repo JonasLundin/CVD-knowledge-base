@@ -7,8 +7,28 @@ total_concepts: 0
 by_category: {}
 by_type: {}
 gates:
-  law_articles:
-    pattern: 'law/*/articles/article-*'
+  cna_rules_sections:
+    pattern: programmes/cve/cna-operational-rules/*
     expected: null
+    actual: 0
+    status: pending
+  record_format_containers:
+    pattern: programmes/cve/record-format/*
+    expected: null
+    actual: 0
+    status: pending
+  csaf_profiles:
+    pattern: formats/csaf/*
+    expected: null
+    actual: 0
+    status: pending
+  eu_member_states:
+    pattern: jurisdictions/eu-member-states/*
+    expected: 27
+    actual: 0
+    status: pending
+  eea_states:
+    pattern: jurisdictions/eea/*
+    expected: 3
     actual: 0
     status: pending

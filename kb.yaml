@@ -1,40 +1,64 @@
-# Bundle manifest read by tools/validate.py. Edit this first when creating a new knowledge base.
+# Bundle manifest read by tools/validate.py. Add a category or section here before using it in wiki/.
 manifest_version: 1
-okf_version: "0.2"
-slug: template
-name: Knowledge Base Template
-description: Template for regulatory and standards knowledge bases published as OKF bundles for Meerkat and MCP.
-extension_key: x-template
+okf_version: '0.2'
+slug: cvd
+name: Coordinated Vulnerability Disclosure Knowledge Base
+description: 'Coordinated vulnerability disclosure: the CVE Program and CNA rules, the EU vulnerability database, advisory
+  and VEX formats, scoring systems, disclosure process, and the law that frames them.'
+extension_key: x-cvd
 categories:
-  - law
-  - requirement
-  - guidance
-  - standard
-  - role
-  - procedure
-  - authority
-  - jurisdiction
-  - timeline
-  - glossary
+- law
+- requirement
+- guidance
+- standard
+- role
+- procedure
+- authority
+- jurisdiction
+- timeline
+- glossary
+- programme
+- rule
+- format
+- metric
 sections:
-  - path: law
-    title: Law
-    description: Primary legal instruments, article by article, with annexes, secondary legislation and interacting law.
-  - path: obligations
-    title: Obligations
-    description: Role and lifecycle views of what the instrument requires.
-  - path: standards
-    title: Standards
-    description: Standards and specifications referenced by the instrument, as identifiers, lifecycle facts and links.
-  - path: guidance
-    title: Guidance
-    description: Official non-binding guidance from the responsible institutions and authorities.
-  - path: jurisdictions
-    title: Jurisdictions
-    description: National authorities, implementing measures and status per jurisdiction.
-  - path: timeline
-    title: Timeline
-    description: Entry into force, application and transition milestones.
-  - path: glossary
-    title: Glossary
-    description: Terms defined by the instrument.
+- path: programmes
+  title: Programmes
+  description: 'Vulnerability identification and cataloguing programmes: the CVE Program with its rules, record format, services
+    and root structure; the ENISA European vulnerability database; CISA''s Known Exploited Vulnerabilities catalogue.'
+- path: formats
+  title: Formats
+  description: Machine-readable advisory, VEX and discovery formats.
+- path: reference-data
+  title: Reference data
+  description: Scoring, prioritisation and identification systems used in disclosure.
+- path: process
+  title: Process
+  description: 'The disclosure lifecycle: intake channels, triage, embargo and coordination including multi-party coordination,
+    advisory publication and updates, safe-harbour terms, bug bounty interfaces, PSIRT operations.'
+- path: roles
+  title: Roles
+  description: Finder or reporter, vendor or manufacturer, coordinator, CSIRT, CNA, Root, Top-Level Root, Secretariat, Authorized
+    Data Publisher, downstream distributor.
+- path: law
+  title: Law
+  description: Legal instruments that require or shape disclosure. EU law is summarised for its disclosure provisions and
+    linked to the sibling bundles for the rest.
+- path: standards
+  title: Standards
+  description: ISO/IEC 29147 (disclosure) and ISO/IEC 30111 (handling), ETSI TR 103 838, the FIRST PSIRT Services Framework
+    and CVD guidelines, recorded as identifiers, scope and links.
+- path: guidance
+  title: Guidance
+  description: Official and programme guidance on running disclosure.
+- path: jurisdictions
+  title: Jurisdictions
+  description: 'National CVD frameworks: the CSIRT designated as coordinator under NIS2 Article 12(1), national policies,
+    safe-harbour status.'
+- path: timeline
+  title: Timeline
+  description: CNA Operational Rules and Record Format versions, ENISA Root establishment, EUVD launch, CVSS and EPSS releases,
+    CRA and NIS2 dates that touch disclosure.
+- path: glossary
+  title: Glossary
+  description: Terms as defined by the CVE Program glossary, ISO/IEC 29147 and 30111, and EU law where they differ.
