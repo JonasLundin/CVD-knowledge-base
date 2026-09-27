@@ -1,7 +1,8 @@
 ---
 type: Metric
 title: Exploit Prediction Scoring System (EPSS)
-description: Data-driven predictive model estimating the statistical probability of real-world exploitation in the wild within 30 days to guide patch prioritization.
+description: Data-driven predictive model estimating the statistical probability of
+  real-world exploitation in the wild within 30 days to guide patch prioritization.
 category: metric
 tags:
 - cvd
@@ -15,16 +16,11 @@ generated:
   at: '2026-09-27T00:00:00Z'
 stale_after: '2027-12-31T00:00:00Z'
 sources:
-- id: first-cvss-v4
-  resource: https://www.first.org/cvss/v4-0/specification-document
-  title: Common Vulnerability Scoring System (CVSS) Specification Document Version 4.0
+- id: first-epss
+  resource: https://www.first.org/epss
+  title: Exploit Prediction Scoring System (EPSS)
   author: Forum of Incident Response and Security Teams (FIRST)
-  last_modified: '2023-11-01T00:00:00Z'
-- id: iso-iec-29147
-  resource: https://www.iso.org/standard/72311.html
-  title: "ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure"
-  author: International Organization for Standardization (ISO) / IEC
-  last_modified: '2018-10-01T00:00:00Z'
+  last_modified: '2023-03-07T00:00:00Z'
 x-cvd:
   jurisdiction: International
   authority_level: standard
@@ -35,7 +31,7 @@ x-cvd:
 
 # Summary
 
-The **Exploit Prediction Scoring System (EPSS)** is an open, data-driven machine learning framework managed by the Forum of Incident Response and Security Teams (FIRST) that predicts the likelihood that a software vulnerability will be exploited in the wild within the subsequent 30 calendar days[^first-cvss-v4]. While CVSS measures the fundamental technical severity of a vulnerability based on architectural attributes, EPSS evaluates dynamic threat landscape telemetry to estimate real-world adversary interest and operational exploitability[^iso-iec-29147].
+The **Exploit Prediction Scoring System (EPSS)** is an open, data-driven machine learning framework managed by the Forum of Incident Response and Security Teams (FIRST) that predicts the likelihood that a software vulnerability will be exploited in the wild within the subsequent 30 calendar days[^first-epss]. While CVSS measures the fundamental technical severity of a vulnerability based on architectural attributes, EPSS evaluates dynamic threat landscape telemetry to estimate real-world adversary interest and operational exploitability.
 
 By generating daily probability estimates for every published CVE ID, EPSS solves the "prioritization overload" problem faced by enterprise security teams, enabling organizations to focus immediate patching resources on the small fraction of vulnerabilities that adversaries are actively attempting to weaponize.
 
@@ -143,5 +139,4 @@ Organizations integrate EPSS through public REST APIs:
 - [Triage and Validation Process](../../process/triage-and-validation.md)
 - [Vendor PSIRT Role](../../roles/vendor-psirt.md)
 
-[^first-cvss-v4]: Forum of Incident Response and Security Teams (FIRST), Common Vulnerability Scoring System (CVSS) Specification Document Version 4.0, https://www.first.org/cvss/v4-0/specification-document
-[^iso-iec-29147]: International Organization for Standardization (ISO) / IEC, ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure, https://www.iso.org/standard/72311.html
+[^first-epss]: Forum of Incident Response and Security Teams (FIRST), Exploit Prediction Scoring System (EPSS), https://www.first.org/epss

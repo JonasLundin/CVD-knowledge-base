@@ -17,12 +17,11 @@ generated:
   at: '2026-09-27T00:00:00Z'
 stale_after: '2027-12-31T00:00:00Z'
 sources:
-- id: iso-iec-29147
-  resource: https://www.iso.org/standard/72311.html
-  title: ISO/IEC 29147:2018 Information technology - Security techniques - Vulnerability
-    disclosure
-  author: International Organization for Standardization
-  last_modified: '2018-10-01T00:00:00Z'
+- id: cve-operational-rules-4-2-0
+  resource: https://www.cve.org/Resources/Roles/Cnas/CNA_Rules_v4.2.0.pdf
+  title: CVE Numbering Authority (CNA) Operational Rules, Version 4.2.0
+  author: CVE Program
+  last_modified: '2026-08-25T00:00:00Z'
 x-cvd:
   jurisdiction: International
   authority_level: binding
@@ -32,7 +31,7 @@ x-cvd:
 
 # Summary
 
-The **CVE Program** employs a distributed hierarchical delegation model ensuring scalable governance of hundreds of CNAs worldwide[^iso-iec-29147].
+The **CVE Program** employs a distributed hierarchical delegation model ensuring scalable governance of hundreds of CNAs worldwide.
 
 # Structural Tiers
 1. **CVE Secretariat**: Operates root administrative services, program policies, and primary registry backups (MITRE).
@@ -44,4 +43,4 @@ The **CVE Program** employs a distributed hierarchical delegation model ensuring
 - [Roots and CNAs Index](index.md)
 - [CNA Role](../../../roles/cna.md)
 
-[^iso-iec-29147]: International Organization for Standardization, ISO/IEC 29147:2018 Information technology - Security techniques - Vulnerability disclosure, https://www.iso.org/standard/72311.html
+[^cve-operational-rules-4-2-0]: CVE Program, CVE Numbering Authority (CNA) Operational Rules, Version 4.2.0, https://www.cve.org/Resources/Roles/Cnas/CNA_Rules_v4.2.0.pdf

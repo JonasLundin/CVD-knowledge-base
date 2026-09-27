@@ -16,12 +16,11 @@ generated:
   at: '2026-09-27T00:00:00Z'
 stale_after: '2027-12-31T00:00:00Z'
 sources:
-- id: iso-iec-29147
-  resource: https://www.iso.org/standard/72311.html
-  title: "ISO/IEC 29147:2018 Information technology \u2014 Security techniques \u2014\
-    \ Vulnerability disclosure"
-  author: International Organization for Standardization (ISO) / IEC
-  last_modified: '2018-10-01T00:00:00Z'
+- id: first-cvd-guide
+  resource: https://www.first.org/global/sigs/vulnerability-coordination/multiparty/cvd-v1.1
+  title: Guidelines for Coordinated Vulnerability Disclosure (FIRST CVD v1.1)
+  author: Forum of Incident Response and Security Teams (FIRST)
+  last_modified: '2020-09-01T00:00:00Z'
 x-cvd:
   jurisdiction: International
   authority_level: rule
@@ -32,7 +31,7 @@ x-cvd:
 
 # Summary
 
-**Multi-Party Vulnerability Coordination** is the specialized coordination procedure required when a single vulnerability impacts multiple downstream vendors, an industry-wide protocol (e.g. TLS, BGP), a widely used open-source library (e.g. OpenSSL, Log4j), or common silicon hardware architecture (e.g. Spectre, Meltdown)[^iso-iec-29147].
+**Multi-Party Vulnerability Coordination** is the specialized coordination procedure required when a single vulnerability impacts multiple downstream vendors, an industry-wide protocol (e.g. TLS, BGP), a widely used open-source library (e.g. OpenSSL, Log4j), or common silicon hardware architecture (e.g. Spectre, Meltdown).
 
 # Coordination Architecture
 
@@ -67,4 +66,4 @@ x-cvd:
 - [Embargo Management and Coordination](embargo-management.md)
 - [Advisory Publication and Patch Release](advisory-publication.md)
 
-[^iso-iec-29147]: International Organization for Standardization (ISO) / IEC, ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure, https://www.iso.org/standard/72311.html
+[^first-cvd-guide]: Forum of Incident Response and Security Teams (FIRST), Guidelines for Coordinated Vulnerability Disclosure (FIRST CVD v1.1), https://www.first.org/global/sigs/vulnerability-coordination/multiparty/cvd-v1.1

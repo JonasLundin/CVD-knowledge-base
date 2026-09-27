@@ -1,57 +1,52 @@
 version: 1
 release: 0.1.0
-baseline: '2026-09-27'
-coverage_status: complete
-review_status: unverified
-total_concepts: 86
+coverage_status: partial
+total_concepts: 110
 by_category:
-  role: 6
+  format: 16
   glossary: 4
-  programme: 3
-  timeline: 3
-  procedure: 5
-  standard: 2
-  metric: 7
-  format: 11
-  rule: 6
+  guidance: 4
   jurisdiction: 31
   law: 3
-  guidance: 5
+  procedure: 9
+  rule: 6
+  programme: 4
+  role: 14
+  metric: 10
+  standard: 4
+  timeline: 5
 by_type:
-  Format: 9
+  Format: 16
   Glossary: 4
-  Jurisdiction: 30
-  Law: 2
-  Metric: 6
-  Procedure: 5
-  Programme: 2
-  Role: 6
+  Guidance: 4
+  Jurisdiction: 31
+  Law: 3
+  Procedure: 9
   Rule: 6
-  Standard: 2
-  Timeline: 3
+  Programme: 3
+  Role: 14
+  Concept: 2
+  Metric: 9
+  Standard: 4
+  Timeline: 5
 gates:
+  record_format_containers:
+    pattern: programmes/cve/record-format/*-container
+    status: pass
+    actual: 2
+    expected: 2
   cna_rules_sections:
     pattern: programmes/cve/cna-operational-rules/*
-    expected: 6
+    status: pass
     actual: 6
-    status: pass
-  record_format_containers:
-    pattern: programmes/cve/record-format/*
-    expected: 4
-    actual: 4
-    status: pass
-  csaf_profiles:
-    pattern: formats/csaf/*
-    expected: 5
-    actual: 5
-    status: pass
+    expected: 6
   eu_member_states:
     pattern: jurisdictions/eu-member-states/*
-    expected: 27
+    status: pass
     actual: 27
-    status: pass
-  eea_states:
+    expected: 27
+  eea_countries:
     pattern: jurisdictions/eea/*
-    expected: 3
-    actual: 3
     status: pass
+    actual: 3
+    expected: 3

@@ -16,10 +16,10 @@ generated:
   at: '2026-09-27T00:00:00Z'
 stale_after: '2027-12-31T00:00:00Z'
 sources:
-- id: cve-program
-  resource: https://www.cve.org/ResourcesSupport/AllResources/CNARules
-  title: CVE Numbering Authority (CNA) Operational Rules Version 4.0
-  author: CVE Program / The MITRE Corporation
+- id: mitre-cwe
+  resource: https://cwe.mitre.org
+  title: Common Weakness Enumeration (CWE)
+  author: The MITRE Corporation
   last_modified: '2024-03-01T00:00:00Z'
 x-cvd:
   jurisdiction: International
@@ -31,7 +31,7 @@ x-cvd:
 
 # Summary
 
-**Common Weakness Enumeration (CWE)** is an authoritative, community-developed dictionary and taxonomy of software and hardware weakness types[^cve-program]. Maintained by MITRE, CWE serves as a standard common language for identifying architectural flaws, coding bugs, and design defects that could lead to exploitable vulnerabilities.
+**Common Weakness Enumeration (CWE)** is an authoritative, community-developed dictionary and taxonomy of software and hardware weakness types[^mitre-cwe]. Maintained by MITRE, CWE serves as a standard common language for identifying architectural flaws, coding bugs, and design defects that could lead to exploitable vulnerabilities.
 
 In coordinated vulnerability disclosure and the CVE Record Format (JSON Schema 5.0), declaring one or more CWE identifiers in the `problemTypes` container is a core requirement for CNA compliance.
 
@@ -76,4 +76,4 @@ In every published CVE record, CNAs record the root weakness inside `containers.
 - [Common Vulnerability Scoring System v4.0](../cvss/cvss-v4-0.md)
 - [Triage, Reproduction, and Impact Assessment](../../process/triage-and-validation.md)
 
-[^cve-program]: CVE Program / The MITRE Corporation, CVE Numbering Authority (CNA) Operational Rules Version 4.0, https://www.cve.org/ResourcesSupport/AllResources/CNARules
+[^mitre-cwe]: The MITRE Corporation, Common Weakness Enumeration (CWE), https://cwe.mitre.org

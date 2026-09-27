@@ -1,7 +1,9 @@
 ---
 type: Metric
 title: Common Vulnerability Scoring System (CVSS) v4.0
-description: Next-generation vulnerability scoring standard introducing CVSS-B, CVSS-BT, CVSS-BE, and CVSS-BTE nomenclatures, separate Vulnerable/Subsequent system impacts, and Attack Requirements.
+description: Next-generation vulnerability scoring standard introducing CVSS-B, CVSS-BT,
+  CVSS-BE, and CVSS-BTE nomenclatures, separate Vulnerable/Subsequent system impacts,
+  and Attack Requirements.
 category: metric
 tags:
 - cvd
@@ -15,16 +17,11 @@ generated:
   at: '2026-09-27T00:00:00Z'
 stale_after: '2027-12-31T00:00:00Z'
 sources:
-- id: first-cvss-v4
-  resource: https://www.first.org/cvss/v4-0/specification-document
-  title: Common Vulnerability Scoring System (CVSS) Specification Document Version 4.0
+- id: first-cvss-v4-0
+  resource: https://www.first.org/cvss/v4.0
+  title: Common Vulnerability Scoring System Version 4.0 (CVSS v4.0) Specification
   author: Forum of Incident Response and Security Teams (FIRST)
   last_modified: '2023-11-01T00:00:00Z'
-- id: iso-iec-29147
-  resource: https://www.iso.org/standard/72311.html
-  title: "ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure"
-  author: International Organization for Standardization (ISO) / IEC
-  last_modified: '2018-10-01T00:00:00Z'
 x-cvd:
   jurisdiction: International
   authority_level: standard
@@ -35,7 +32,7 @@ x-cvd:
 
 # Summary
 
-The **Common Vulnerability Scoring System (CVSS) Version 4.0** represents the next generation of the global vulnerability severity scoring standard, published in November 2023 by the Forum of Incident Response and Security Teams (FIRST)[^first-cvss-v4]. Designed to overcome the architectural constraints and operational misinterpretations of CVSS v3.1, CVSS v4.0 introduces substantial enhancements: fine-grained attack condition modeling, explicit separation between Vulnerable and Subsequent system impacts, formal human safety considerations, and a restructured scoring algorithm based on discrete MacroVectors and interpolated lookup tables[^iso-iec-29147].
+The **Common Vulnerability Scoring System (CVSS) Version 4.0** represents the next generation of the global vulnerability severity scoring standard, published in November 2023 by the Forum of Incident Response and Security Teams (FIRST)[^first-cvss-v4-0]. Designed to overcome the architectural constraints and operational misinterpretations of CVSS v3.1, CVSS v4.0 introduces substantial enhancements: fine-grained attack condition modeling, explicit separation between Vulnerable and Subsequent system impacts, formal human safety considerations, and a restructured scoring algorithm based on discrete MacroVectors and interpolated lookup tables.
 
 CVSS v4.0 also resolves the industry-wide confusion between severity and risk by establishing mandatory nomenclature distinctions (CVSS-B, CVSS-BT, CVSS-BE, CVSS-BTE) that clarify whether a score reflects pure technical severity, active threat intelligence, or customized organizational environments.
 
@@ -154,5 +151,4 @@ In modern PSIRT and vulnerability disclosure environments:
 - [ADP Container](../../programmes/cve/record-format/adp-container.md)
 - [CVSS v4.0 Release Timeline](../../timeline/cvss-v4-release.md)
 
-[^first-cvss-v4]: Forum of Incident Response and Security Teams (FIRST), Common Vulnerability Scoring System (CVSS) Specification Document Version 4.0, https://www.first.org/cvss/v4-0/specification-document
-[^iso-iec-29147]: International Organization for Standardization (ISO) / IEC, ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure, https://www.iso.org/standard/72311.html
+[^first-cvss-v4-0]: Forum of Incident Response and Security Teams (FIRST), Common Vulnerability Scoring System Version 4.0 (CVSS v4.0) Specification, https://www.first.org/cvss/v4.0

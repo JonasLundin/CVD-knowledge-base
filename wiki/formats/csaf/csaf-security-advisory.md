@@ -1,7 +1,8 @@
 ---
 type: Format
 title: CSAF Security Advisory Profile
-description: Specialized vendor advisory profile under CSAF 2.0 detailing fixed vulnerabilities, affected and patched product versions, remediation actions, and CVSS severity metrics.
+description: Specialized vendor advisory profile under CSAF 2.0 detailing fixed vulnerabilities,
+  affected and patched product versions, remediation actions, and CVSS severity metrics.
 category: format
 tags:
 - cvd
@@ -16,15 +17,10 @@ generated:
 stale_after: '2027-12-31T00:00:00Z'
 sources:
 - id: oasis-csaf-2-0
-  resource: https://docs.oasis-open.org/csaf/csaf/v2.0/csaf-v2.0.html
-  title: Common Security Advisory Framework (CSAF) Version 2.0
-  author: OASIS Common Security Advisory Framework TC
-  last_modified: '2022-11-09T00:00:00Z'
-- id: iso-iec-29147
-  resource: https://www.iso.org/standard/72311.html
-  title: "ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure"
-  author: International Organization for Standardization (ISO) / IEC
-  last_modified: '2018-10-01T00:00:00Z'
+  resource: https://docs.oasis-open.org/csaf/csaf/v2.0/os/csaf-v2.0-os.html
+  title: Common Security Advisory Framework Version 2.0 (CSAF v2.0)
+  author: OASIS Open
+  last_modified: '2022-11-18T00:00:00Z'
 x-cvd:
   jurisdiction: International
   authority_level: standard
@@ -35,7 +31,7 @@ x-cvd:
 
 # Summary
 
-The **CSAF Security Advisory Profile** (Section 4.4 of CSAF Version 2.0) is the definitive industry profile designed for software publishers, hardware manufacturers, and Product Security Incident Response Teams (PSIRTs) to release formal security advisories detailing remediated vulnerabilities[^oasis-csaf-2-0]. While the Base Profile defines universal document metadata, the Security Advisory Profile mandates rigorous technical relationships between identified vulnerabilities (CVEs), specific hardware/software product trees, authoritative severity scoring (CVSS), and actionable remediation measures (patches, workarounds, or upgrades)[^iso-iec-29147].
+The **CSAF Security Advisory Profile** (Section 4.4 of CSAF Version 2.0) is the definitive industry profile designed for software publishers, hardware manufacturers, and Product Security Incident Response Teams (PSIRTs) to release formal security advisories detailing remediated vulnerabilities[^oasis-csaf-2-0]. While the Base Profile defines universal document metadata, the Security Advisory Profile mandates rigorous technical relationships between identified vulnerabilities (CVEs), specific hardware/software product trees, authoritative severity scoring (CVSS), and actionable remediation measures (patches, workarounds, or upgrades)[^oasis-csaf-2-0].
 
 In modern DevSecOps and enterprise vulnerability management, CSAF Security Advisories eliminate the ambiguity of PDF or HTML security bulletins, empowering automated orchestrators to ingest vendor remediation data directly into patching workflows.
 
@@ -169,7 +165,7 @@ To conform to the Security Advisory Profile, a document must satisfy all require
 CSAF Security Advisories streamline end-to-end vulnerability response:
 1. **Automated Exposure Matching**: Enterprise asset managers parse the `known_affected` array against internal CMDB/inventory CPE coordinates. If `PROD-ACG-510` is detected, the vulnerability is flagged as active.
 2. **Deterministic Remediation Ingestion**: Security orchestrators extract the `vendor_fix` remediation block and target download URL, automatically scheduling a maintenance window for upgrade.
-3. **Audit Evidence**: Under Article 10 of the Cyber Resilience Act (CRA) and NIS2 Article 21, organizations retain ingested CSAF advisories as machine-readable evidence of timely vulnerability remediation[^iso-iec-29147].
+3. **Audit Evidence**: Under Article 10 of the Cyber Resilience Act (CRA) and NIS2 Article 21, organizations retain ingested CSAF advisories as machine-readable evidence of timely vulnerability remediation[^oasis-csaf-2-0].
 
 # Dates and Transitions
 
@@ -188,5 +184,4 @@ CSAF Security Advisories streamline end-to-end vulnerability response:
 - [CVSS v3.1 Reference Data](../../reference-data/cvss/cvss-v3-1.md)
 - [CVSS v4.0 Reference Data](../../reference-data/cvss/cvss-v4-0.md)
 
-[^oasis-csaf-2-0]: OASIS Common Security Advisory Framework TC, Common Security Advisory Framework (CSAF) Version 2.0, https://docs.oasis-open.org/csaf/csaf/v2.0/csaf-v2.0.html
-[^iso-iec-29147]: International Organization for Standardization (ISO) / IEC, ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure, https://www.iso.org/standard/72311.html
+[^oasis-csaf-2-0]: OASIS Open, Common Security Advisory Framework Version 2.0 (CSAF v2.0), https://docs.oasis-open.org/csaf/csaf/v2.0/os/csaf-v2.0-os.html

@@ -1,7 +1,9 @@
 ---
 type: Format
 title: CSAF Base Profile
-description: Baseline document architecture and foundation profile of the Common Security Advisory Framework (CSAF) Version 2.0, establishing core metadata, tracking, publisher, and product tree requirements.
+description: Baseline document architecture and foundation profile of the Common Security
+  Advisory Framework (CSAF) Version 2.0, establishing core metadata, tracking, publisher,
+  and product tree requirements.
 category: format
 tags:
 - cvd
@@ -16,15 +18,10 @@ generated:
 stale_after: '2027-12-31T00:00:00Z'
 sources:
 - id: oasis-csaf-2-0
-  resource: https://docs.oasis-open.org/csaf/csaf/v2.0/csaf-v2.0.html
-  title: Common Security Advisory Framework (CSAF) Version 2.0
-  author: OASIS Common Security Advisory Framework TC
-  last_modified: '2022-11-09T00:00:00Z'
-- id: iso-iec-29147
-  resource: https://www.iso.org/standard/72311.html
-  title: "ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure"
-  author: International Organization for Standardization (ISO) / IEC
-  last_modified: '2018-10-01T00:00:00Z'
+  resource: https://docs.oasis-open.org/csaf/csaf/v2.0/os/csaf-v2.0-os.html
+  title: Common Security Advisory Framework Version 2.0 (CSAF v2.0)
+  author: OASIS Open
+  last_modified: '2022-11-18T00:00:00Z'
 x-cvd:
   jurisdiction: International
   authority_level: standard
@@ -35,7 +32,7 @@ x-cvd:
 
 # Summary
 
-The **CSAF Base Profile** constitutes the foundational specification of the Common Security Advisory Framework (CSAF) Version 2.0, standardized by the OASIS CSAF Technical Committee[^oasis-csaf-2-0]. Serving as the structural baseline for all specialized advisory profiles (such as Security Advisories, VEX documents, and Incident Response notices), the Base Profile establishes the mandatory document envelope, cryptographic publisher identity, lifecycle tracking history, distribution rules, and product identification trees[^iso-iec-29147].
+The **CSAF Base Profile** constitutes the foundational specification of the Common Security Advisory Framework (CSAF) Version 2.0, standardized by the OASIS CSAF Technical Committee[^oasis-csaf-2-0]. Serving as the structural baseline for all specialized advisory profiles (such as Security Advisories, VEX documents, and Incident Response notices), the Base Profile establishes the mandatory document envelope, cryptographic publisher identity, lifecycle tracking history, distribution rules, and product identification trees[^oasis-csaf-2-0].
 
 By standardizing core metadata and product relationship graphs into strict JSON schemas, the Base Profile enables enterprise vulnerability scanners, national CSIRTs, and automated incident response tools to parse, validate, and index heterogeneous security disclosures without requiring proprietary custom adapters.
 
@@ -149,5 +146,4 @@ CSAF 2.0 defines standardized web distribution mechanisms under the `.well-known
 - [Vendor PSIRT Role](../../roles/vendor-psirt.md)
 - [Advisory Publication Process](../../process/advisory-publication.md)
 
-[^oasis-csaf-2-0]: OASIS Common Security Advisory Framework TC, Common Security Advisory Framework (CSAF) Version 2.0, https://docs.oasis-open.org/csaf/csaf/v2.0/csaf-v2.0.html
-[^iso-iec-29147]: International Organization for Standardization (ISO) / IEC, ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure, https://www.iso.org/standard/72311.html
+[^oasis-csaf-2-0]: OASIS Open, Common Security Advisory Framework Version 2.0 (CSAF v2.0), https://docs.oasis-open.org/csaf/csaf/v2.0/os/csaf-v2.0-os.html

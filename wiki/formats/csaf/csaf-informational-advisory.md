@@ -1,7 +1,9 @@
 ---
 type: Format
 title: CSAF Informational Advisory Profile
-description: Specialized CSAF 2.0 profile for publishing non-remediation security notices, defensive hardening guidelines, end-of-life warnings, and architecture advisories.
+description: Specialized CSAF 2.0 profile for publishing non-remediation security
+  notices, defensive hardening guidelines, end-of-life warnings, and architecture
+  advisories.
 category: format
 tags:
 - cvd
@@ -16,15 +18,10 @@ generated:
 stale_after: '2027-12-31T00:00:00Z'
 sources:
 - id: oasis-csaf-2-0
-  resource: https://docs.oasis-open.org/csaf/csaf/v2.0/csaf-v2.0.html
-  title: Common Security Advisory Framework (CSAF) Version 2.0
-  author: OASIS Common Security Advisory Framework TC
-  last_modified: '2022-11-09T00:00:00Z'
-- id: iso-iec-29147
-  resource: https://www.iso.org/standard/72311.html
-  title: "ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure"
-  author: International Organization for Standardization (ISO) / IEC
-  last_modified: '2018-10-01T00:00:00Z'
+  resource: https://docs.oasis-open.org/csaf/csaf/v2.0/os/csaf-v2.0-os.html
+  title: Common Security Advisory Framework Version 2.0 (CSAF v2.0)
+  author: OASIS Open
+  last_modified: '2022-11-18T00:00:00Z'
 x-cvd:
   jurisdiction: International
   authority_level: standard
@@ -35,7 +32,7 @@ x-cvd:
 
 # Summary
 
-The **CSAF Informational Advisory Profile** (Section 4.3 of CSAF Version 2.0) defines the standardized schema for security bulletins that provide strategic guidance, security hardening recommendations, deprecation notices, or threat awareness bulletins that are not tied to a specific newly fixed software vulnerability[^oasis-csaf-2-0]. While the Security Advisory Profile is reserved for specific code defect fixes and the VEX profile is reserved for exploitability assertions, the Informational Advisory Profile equips publishers to disseminate structured, machine-parsable security guidance to enterprise consumers[^iso-iec-29147].
+The **CSAF Informational Advisory Profile** (Section 4.3 of CSAF Version 2.0) defines the standardized schema for security bulletins that provide strategic guidance, security hardening recommendations, deprecation notices, or threat awareness bulletins that are not tied to a specific newly fixed software vulnerability[^oasis-csaf-2-0]. While the Security Advisory Profile is reserved for specific code defect fixes and the VEX profile is reserved for exploitability assertions, the Informational Advisory Profile equips publishers to disseminate structured, machine-parsable security guidance to enterprise consumers[^oasis-csaf-2-0].
 
 This profile ensures that non-patch security communications benefit from the same automated distribution channels, cryptographic validation, and tracking lifecycles as traditional vulnerability advisories.
 
@@ -81,7 +78,7 @@ Organizations issue CSAF Informational Advisories in diverse operational context
 
 1. **Cryptographic Deprecation Notices**: Warning customers that legacy cipher suites (e.g., TLS 1.0, 3DES, or RSA keys under 2048 bits) will be disabled in upcoming major releases, requiring architectural updates.
 2. **Hardening Best Practices**: Advising administrators on how to configure secure runtime isolation, enable strict firewall policies, or deploy multi-factor authentication (MFA) to mitigate emerging threat campaigns.
-3. **End-of-Support / End-of-Life (EOL) Declarations**: Formal machine-readable notifications declaring that specific software lines will no longer receive security maintenance, fulfilling transparency mandates under the EU Cyber Resilience Act (CRA)[^iso-iec-29147].
+3. **End-of-Support / End-of-Life (EOL) Declarations**: Formal machine-readable notifications declaring that specific software lines will no longer receive security maintenance, fulfilling transparency mandates under the EU Cyber Resilience Act (CRA)[^oasis-csaf-2-0].
 4. **Third-Party Ecosystem Advisories**: Guidance issued by cloud service providers explaining how customer workloads can defend against widespread zero-day campaigns impacting foundational internet protocols.
 
 # Complete CSAF Informational Advisory Example
@@ -156,5 +153,4 @@ CSAF Informational Advisories enable proactive security operations:
 - [Advisory Publication Process](../../process/advisory-publication.md)
 - [Vendor PSIRT Role](../../roles/vendor-psirt.md)
 
-[^oasis-csaf-2-0]: OASIS Common Security Advisory Framework TC, Common Security Advisory Framework (CSAF) Version 2.0, https://docs.oasis-open.org/csaf/csaf/v2.0/csaf-v2.0.html
-[^iso-iec-29147]: International Organization for Standardization (ISO) / IEC, ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure, https://www.iso.org/standard/72311.html
+[^oasis-csaf-2-0]: OASIS Open, Common Security Advisory Framework Version 2.0 (CSAF v2.0), https://docs.oasis-open.org/csaf/csaf/v2.0/os/csaf-v2.0-os.html

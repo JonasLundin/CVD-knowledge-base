@@ -1,7 +1,9 @@
 ---
 type: Format
 title: CSAF Security Incident Response Profile
-description: Specialized CSAF 2.0 profile designed for CSIRTs and PSIRTs to issue early warnings, situational updates, and active exploitation advisories during ongoing cybersecurity incidents.
+description: Specialized CSAF 2.0 profile designed for CSIRTs and PSIRTs to issue
+  early warnings, situational updates, and active exploitation advisories during ongoing
+  cybersecurity incidents.
 category: format
 tags:
 - cvd
@@ -16,15 +18,10 @@ generated:
 stale_after: '2027-12-31T00:00:00Z'
 sources:
 - id: oasis-csaf-2-0
-  resource: https://docs.oasis-open.org/csaf/csaf/v2.0/csaf-v2.0.html
-  title: Common Security Advisory Framework (CSAF) Version 2.0
-  author: OASIS Common Security Advisory Framework TC
-  last_modified: '2022-11-09T00:00:00Z'
-- id: iso-iec-29147
-  resource: https://www.iso.org/standard/72311.html
-  title: "ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure"
-  author: International Organization for Standardization (ISO) / IEC
-  last_modified: '2018-10-01T00:00:00Z'
+  resource: https://docs.oasis-open.org/csaf/csaf/v2.0/os/csaf-v2.0-os.html
+  title: Common Security Advisory Framework Version 2.0 (CSAF v2.0)
+  author: OASIS Open
+  last_modified: '2022-11-18T00:00:00Z'
 x-cvd:
   jurisdiction: International
   authority_level: standard
@@ -35,7 +32,7 @@ x-cvd:
 
 # Summary
 
-The **CSAF Security Incident Response Profile** (Section 4.2 of CSAF Version 2.0) is the specialized advisory profile engineered for Computer Security Incident Response Teams (CSIRTs), Product Security Incident Response Teams (PSIRTs), and national cybersecurity agencies to disseminate authoritative notices regarding active cybersecurity incidents, ongoing forensic investigations, and active exploitation campaigns[^oasis-csaf-2-0]. During the opening hours of a zero-day emergency or major supply chain compromise, vendors and coordinators cannot wait weeks for fully validated software patches before alerting defenders[^iso-iec-29147].
+The **CSAF Security Incident Response Profile** (Section 4.2 of CSAF Version 2.0) is the specialized advisory profile engineered for Computer Security Incident Response Teams (CSIRTs), Product Security Incident Response Teams (PSIRTs), and national cybersecurity agencies to disseminate authoritative notices regarding active cybersecurity incidents, ongoing forensic investigations, and active exploitation campaigns[^oasis-csaf-2-0]. During the opening hours of a zero-day emergency or major supply chain compromise, vendors and coordinators cannot wait weeks for fully validated software patches before alerting defenders[^oasis-csaf-2-0].
 
 By relaxing the mandatory product tree and patch requirements enforced by the Security Advisory Profile, the Security Incident Response Profile equips responders to release rapid, machine-readable early warnings containing containment workarounds, Indicators of Compromise (IoCs), and forensic guidance.
 
@@ -87,7 +84,7 @@ The Security Incident Response Profile operates as the primary communications ve
    - Forensic analysis isolates affected product lines.
    - The document is revised (`document.tracking.version` incremented), populating the `product_tree` with confirmed vulnerable product IDs.
 3. **Transition to Remediation**:
-   - Once permanent code fixes are engineered and verified, the organization publishes a full **CSAF Security Advisory**, referencing or superseding the original Incident Response bulletin[^iso-iec-29147].
+   - Once permanent code fixes are engineered and verified, the organization publishes a full **CSAF Security Advisory**, referencing or superseding the original Incident Response bulletin[^oasis-csaf-2-0].
 
 # Complete CSAF Security Incident Response Example
 
@@ -175,5 +172,4 @@ Security Operations Centers (SOCs) leverage this profile for automated incident 
 - [Coordinator Role](../../roles/coordinator.md)
 - [Vendor PSIRT Role](../../roles/vendor-psirt.md)
 
-[^oasis-csaf-2-0]: OASIS Common Security Advisory Framework TC, Common Security Advisory Framework (CSAF) Version 2.0, https://docs.oasis-open.org/csaf/csaf/v2.0/csaf-v2.0.html
-[^iso-iec-29147]: International Organization for Standardization (ISO) / IEC, ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure, https://www.iso.org/standard/72311.html
+[^oasis-csaf-2-0]: OASIS Open, Common Security Advisory Framework Version 2.0 (CSAF v2.0), https://docs.oasis-open.org/csaf/csaf/v2.0/os/csaf-v2.0-os.html

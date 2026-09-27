@@ -1,62 +1,55 @@
 ---
 type: Metric
 title: CISA Known Exploited Vulnerabilities (KEV) Catalog
-description: Authoritative catalog of vulnerabilities known to be actively exploited
-  in the wild, carrying mandatory federal remediation deadlines.
+description: Authoritative federal catalog of vulnerabilities known to be actively exploited in the wild, governed by CISA Binding Operational Directives.
 category: metric
 tags:
-- cvd
-- metric
-- cisa
+- reference-data
 - kev
-- threat-intelligence
+- cisa
+- bod-26-04
 status: draft
 generated:
-  by: agent:kb-researcher-writer
+  by: manual-curation
   at: '2026-09-27T00:00:00Z'
 stale_after: '2027-12-31T00:00:00Z'
 sources:
-- id: first-cvss-v4
-  resource: https://www.first.org/cvss/v4-0/specification-document
-  title: Common Vulnerability Scoring System (CVSS) Specification Document Version
-    4.0
-  author: Forum of Incident Response and Security Teams (FIRST)
-  last_modified: '2023-11-01T00:00:00Z'
+- id: cisa-kev
+  resource: https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+  title: Known Exploited Vulnerabilities Catalog
+  author: Cybersecurity and Infrastructure Security Agency (CISA)
+  last_modified: '2026-06-10T00:00:00Z'
+- id: cisa-bod-26-04
+  resource: https://www.cisa.gov/news-events/directives/binding-operational-directive-26-04
+  title: 'Binding Operational Directive 26-04: Advancing Federal Remediation of Exploited Vulnerabilities'
+  author: Cybersecurity and Infrastructure Security Agency (CISA)
+  last_modified: '2026-06-10T00:00:00Z'
 x-cvd:
-  jurisdiction: International
-  authority_level: standard
+  jurisdiction: US
+  authority_level: statutory
   instrument_status: in_force
-  provision: CISA Binding Operational Directive 22-01
   checked_at: '2026-09-27T00:00:00Z'
 ---
 
 # Summary
 
-The **Known Exploited Vulnerabilities (KEV) Catalog** is an authoritative, publicly accessible register established by the US Cybersecurity and Infrastructure Security Agency (**CISA**) under **Binding Operational Directive 22-01 (BOD 22-01)**[^first-cvss-v4].
+The **CISA Known Exploited Vulnerabilities (KEV) Catalog** is an authoritative inventory of security flaws actively targeted and exploited by threat actors in the wild[^cisa-kev][^cisa-bod-26-04].
 
-KEV shifts vulnerability management from theoretical severity (e.g. CVSS 9.0+) to empirical evidence of malicious exploitation, cataloging vulnerabilities that threat actors are actively leveraging in attacks worldwide.
+# Statutory Authority and Ingestion Criteria
 
-# Inclusion Thresholds & Operational Mandates
+## Federal Directives
+Originally established under BOD 22-01 and modernized under **Binding Operational Directive 26-04**, KEV obligations are legally binding on all United States Federal Civilian Executive Branch (FCEB) agencies.
 
-### 1. Mandatory Addition Criteria
-For a CVE to be added to the KEV catalog, CISA requires three strict conditions:
-1. The vulnerability has been assigned an official CVE ID.
-2. There is reliable, corroborated evidence of active exploitation in the wild.
-3. There is a clear remediation action (vendor patch or mitigation guidance).
-
-### 2. BOD 22-01 Federal Remediation Deadlines
-- For zero-day vulnerabilities actively exploited prior to patch release: Remediation typically mandated within **14 days**.
-- For standard disclosed vulnerabilities: Remediation typically mandated within **21 days**.
-
-# Impact on SSVC and Risk Prioritization
-
-A vulnerability's presence in KEV automatically changes its decision state across risk engines:
-- In **SSVC**, the *Exploitation* branch immediately evaluates to `Active`, elevating the decision outcome to `Act` or `Attend`.
-- In enterprise SOC/VM programs, KEV status triggers immediate emergency patching playbooks.
+## Inclusion Thresholds
+To be cataloged in KEV, an issue must meet three mandatory criteria:
+1. Assigned a valid, active CVE ID.
+2. Verified reliable evidence of active exploitation in the wild (observed campaigns or public weaponized proof-of-concept attacks).
+3. Clear remediation action available (e.g., vendor patch, firmware upgrade, or documented mitigation).
 
 # Related concepts
-- [Stakeholder-Specific Vulnerability Categorization (SSVC)](../ssvc/ssvc.md)
-- [Exploit Prediction Scoring System (EPSS)](../epss/epss.md)
-- [ADP Container](../../programmes/cve/record-format/adp-container.md)
+- [Reference Data Index](../index.md)
+- [EPSS](../epss/epss.md)
+- [SSVC](../ssvc/ssvc.md)
 
-[^first-cvss-v4]: Forum of Incident Response and Security Teams (FIRST), Common Vulnerability Scoring System (CVSS) Specification Document Version 4.0, https://www.first.org/cvss/v4-0/specification-document
+[^cisa-kev]: Cybersecurity and Infrastructure Security Agency (CISA), Known Exploited Vulnerabilities Catalog, https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+[^cisa-bod-26-04]: Cybersecurity and Infrastructure Security Agency (CISA), Binding Operational Directive 26-04: Advancing Federal Remediation of Exploited Vulnerabilities, https://www.cisa.gov/news-events/directives/binding-operational-directive-26-04

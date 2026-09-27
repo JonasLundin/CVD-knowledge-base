@@ -1,7 +1,9 @@
 ---
 type: Format
 title: CSAF Vulnerability Exploitability eXchange (VEX) Profile
-description: Specialized machine-readable profile under CSAF 2.0 asserting actual exploitability status (known_not_affected, known_affected, fixed, under_investigation) to eliminate SBOM false positives.
+description: Specialized machine-readable profile under CSAF 2.0 asserting actual
+  exploitability status (known_not_affected, known_affected, fixed, under_investigation)
+  to eliminate SBOM false positives.
 category: format
 tags:
 - cvd
@@ -16,15 +18,10 @@ generated:
 stale_after: '2027-12-31T00:00:00Z'
 sources:
 - id: oasis-csaf-2-0
-  resource: https://docs.oasis-open.org/csaf/csaf/v2.0/csaf-v2.0.html
-  title: Common Security Advisory Framework (CSAF) Version 2.0
-  author: OASIS Common Security Advisory Framework TC
-  last_modified: '2022-11-09T00:00:00Z'
-- id: iso-iec-29147
-  resource: https://www.iso.org/standard/72311.html
-  title: "ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure"
-  author: International Organization for Standardization (ISO) / IEC
-  last_modified: '2018-10-01T00:00:00Z'
+  resource: https://docs.oasis-open.org/csaf/csaf/v2.0/os/csaf-v2.0-os.html
+  title: Common Security Advisory Framework Version 2.0 (CSAF v2.0)
+  author: OASIS Open
+  last_modified: '2022-11-18T00:00:00Z'
 x-cvd:
   jurisdiction: International
   authority_level: standard
@@ -35,7 +32,7 @@ x-cvd:
 
 # Summary
 
-The **CSAF Vulnerability Exploitability eXchange (VEX) Profile** (Section 4.5 of CSAF Version 2.0) is the standardized machine-readable profile that allows software vendors, device manufacturers, and open-source projects to publish authoritative assertions regarding whether a specific vulnerability is actually exploitable within their products[^oasis-csaf-2-0]. While Software Bill of Materials (SBOM) documents identify every upstream library and dependency embedded in a product, the mere presence of a vulnerable library does not necessarily render the product exploitable[^iso-iec-29147].
+The **CSAF Vulnerability Exploitability eXchange (VEX) Profile** (Section 4.5 of CSAF Version 2.0) is the standardized machine-readable profile that allows software vendors, device manufacturers, and open-source projects to publish authoritative assertions regarding whether a specific vulnerability is actually exploitable within their products[^oasis-csaf-2-0]. While Software Bill of Materials (SBOM) documents identify every upstream library and dependency embedded in a product, the mere presence of a vulnerable library does not necessarily render the product exploitable[^oasis-csaf-2-0].
 
 By communicating machine-actionable statuses such as `known_not_affected` alongside standardized technical justifications (e.g., dead code elimination, compiler flags, or sandboxing), CSAF VEX eliminates massive volumes of false positives, saving security teams thousands of hours of unnecessary manual investigation.
 
@@ -107,7 +104,7 @@ Under Section 4.5 of CSAF 2.0, if a publisher designates a product as `known_not
         {
           "number": "1.0.0",
           "date": "2026-02-10T14:00:00.000Z",
-          "summary": "Formal VEX declaration for CVE-2021-44228."
+          "summary": "Formal VEX declaration for CVE-YYYY-NNNNN."
         }
       ]
     }
@@ -125,7 +122,7 @@ Under Section 4.5 of CSAF 2.0, if a publisher designates a product as `known_not
   },
   "vulnerabilities": [
     {
-      "cve": "CVE-2021-44228",
+      "cve": "CVE-YYYY-NNNNN",
       "title": "Log4Shell JNDI Remote Code Execution",
       "product_status": {
         "known_not_affected": ["CSAFPID-ACME-DC-24"]
@@ -154,7 +151,7 @@ Under Section 4.5 of CSAF 2.0, if a publisher designates a product as `known_not
 
 CSAF VEX is critical for high-velocity software supply chain environments:
 1. **Automated Scanner Suppression**: CI/CD security scanners ingest the product SBOM and match CVEs. Concurrently, the pipeline pulls the vendor's CSAF VEX document. If a detected dependency matches `known_not_affected`, the alert is automatically downgraded from Critical to Informational, preventing build breakage.
-2. **Regulatory Compliance (CRA & US Executive Order 14028)**: Under the Cyber Resilience Act, manufacturers must provide vulnerability handling transparency. CSAF VEX provides the standard format required to justify why unpatched third-party CVEs in dependencies pose no risk to end consumers[^iso-iec-29147].
+2. **Regulatory Compliance (CRA & US Executive Order 14028)**: Under the Cyber Resilience Act, manufacturers must provide vulnerability handling transparency. CSAF VEX provides the standard format required to justify why unpatched third-party CVEs in dependencies pose no risk to end consumers[^oasis-csaf-2-0].
 
 # Dates and Transitions
 
@@ -171,5 +168,4 @@ CSAF VEX is critical for high-velocity software supply chain environments:
 - [Vendor PSIRT Role](../../roles/vendor-psirt.md)
 - [Coordinated Vulnerability Disclosure Glossary](../../glossary/coordinated-vulnerability-disclosure.md)
 
-[^oasis-csaf-2-0]: OASIS Common Security Advisory Framework TC, Common Security Advisory Framework (CSAF) Version 2.0, https://docs.oasis-open.org/csaf/csaf/v2.0/csaf-v2.0.html
-[^iso-iec-29147]: International Organization for Standardization (ISO) / IEC, ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure, https://www.iso.org/standard/72311.html
+[^oasis-csaf-2-0]: OASIS Open, Common Security Advisory Framework Version 2.0 (CSAF v2.0), https://docs.oasis-open.org/csaf/csaf/v2.0/os/csaf-v2.0-os.html
