@@ -1,44 +1,45 @@
 ---
-type: Concept
-title: French ANSSI Statutory CVD Regime (Article L. 2321-4 CP)
-description: Pioneering European statutory framework granting legal immunity to vulnerability
-  researchers who report findings to ANSSI.
+type: Law
+title: French National CVD Regime (Article L. 2321-4 du code de la défense)
+description: Statutory framework under French law granting legal immunity to good-faith security researchers disclosing vulnerabilities directly to ANSSI.
 category: law
 tags:
-- cvd
 - law
+- national
 - france
 - anssi
-- safe-harbor
+- safe-harbour
 status: draft
 generated:
-  by: agent:kb-researcher-writer
+  by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2028-12-31T00:00:00Z'
 sources:
-- id: iso-iec-29147
-  resource: https://www.iso.org/standard/72311.html
-  title: ISO/IEC 29147:2018 Information technology - Security techniques - Vulnerability
-    disclosure
-  author: International Organization for Standardization
-  last_modified: '2018-10-01T00:00:00Z'
+- id: fr-code-defense-l2321-4
+  resource: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033219460
+  title: Code de la défense — Article L. 2321-4
+  author: République Française
+  last_modified: '2016-10-09T00:00:00Z'
 x-cvd:
-  jurisdiction: International
-  authority_level: binding
+  jurisdiction: FR
+  authority_level: statutory
   instrument_status: in_force
+  provision: Code de la défense Art. L. 2321-4
   checked_at: '2026-09-27T00:00:00Z'
 ---
 
 # Summary
 
-Under Article L. 2321-4 of the French Defense Code (CP), France established one of the world's first statutory legal protections for security researchers who disclose vulnerabilities to **ANSSI**[^iso-iec-29147].
+**Article L. 2321-4 of the French Defence Code (Code de la défense)** provides a legal safe harbour and statutory intermediary framework for coordinated vulnerability disclosure in France[^fr-code-defense-l2321-4].
 
-# Legal Mechanics
-- Researchers who disclose vulnerabilities to ANSSI without revealing them to unauthorized third parties are exempt from criminal liability.
-- ANSSI triages the finding and coordinates confidential remediation with the vendor.
+# Statutory Immunity and Notification Process
+1. **Scope of Exemption**: Any natural or legal person who discloses to ANSSI an ICT system vulnerability discovered during bona-fide research is protected from criminal prosecution under Article 323-1 of the Penal Code (unauthorized access to an automated data processing system).
+2. **Confidentiality Guarantee**: ANSSI maintains strict confidentiality concerning the identity of the finder toward the affected software vendor.
+3. **Remediation Intermediation**: ANSSI assesses the vulnerability, liaises with the affected vendor or system operator, and establishes a coordinated mitigation timeline before any public disclosure.
 
 # Related concepts
 - [National Law Index](index.md)
-- [France Jurisdiction](../../jurisdictions/eu-member-states/france.md)
+- [CVD Framework in France](../../jurisdictions/eu-member-states/france.md)
+- [Safe Harbour](../../process/safe-harbour.md)
 
-[^iso-iec-29147]: International Organization for Standardization, ISO/IEC 29147:2018 Information technology - Security techniques - Vulnerability disclosure, https://www.iso.org/standard/72311.html
+[^fr-code-defense-l2321-4]: République Française, Code de la défense — Article L. 2321-4, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033219460

@@ -6,8 +6,6 @@ okf_version: "0.2"
 
 Concise, source-traceable knowledge about coordinated vulnerability disclosure as practised and regulated today: the CVE Program and its CNA Operational Rules, the CVE Record Format, the European vulnerability database, advisory and VEX formats, scoring and prioritisation systems, the disclosure process itself, and the EU and national law that frames it.
 
-> **Scaffold:** no concepts have been ingested yet. Section indexes describe the planned content.
-
 > **General orientation only:** do not use this bundle as the basis for decisions that determine, demonstrate, or materially affect compliance. Verify current primary sources and obtain qualified professional advice before making CVE-assignment, disclosure-timing, embargo, regulatory-reporting, or other compliance-impacting decisions.
 
 ## Browse

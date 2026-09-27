@@ -16,22 +16,16 @@ generated:
   at: '2026-09-27T00:00:00Z'
 stale_after: '2027-12-31T00:00:00Z'
 sources:
-- id: iso-iec-29147
-  resource: https://www.iso.org/standard/72311.html
-  title: "ISO/IEC 29147:2018 Information technology \u2014 Security techniques \u2014\
-    \ Vulnerability disclosure"
-  author: International Organization for Standardization (ISO) / IEC
-  last_modified: '2018-10-01T00:00:00Z'
-- id: cve-program
-  resource: https://www.cve.org/ResourcesSupport/AllResources/CNARules
-  title: CVE Numbering Authority (CNA) Operational Rules Version 4.0
-  author: CVE Program / The MITRE Corporation
-  last_modified: '2024-03-01T00:00:00Z'
+- id: first-cvd-guide
+  resource: https://www.first.org/global/sigs/vulnerability-coordination/multiparty/guidelines-v1.1
+  title: Guidelines for Coordinated Vulnerability Disclosure (FIRST CVD v1.1)
+  author: Forum of Incident Response and Security Teams (FIRST)
+  last_modified: '2020-09-01T00:00:00Z'
 - id: oasis-csaf-2-0
-  resource: https://docs.oasis-open.org/csaf/csaf/v2.0/csaf-v2.0.html
-  title: Common Security Advisory Framework (CSAF) Version 2.0
-  author: OASIS Common Security Advisory Framework TC
-  last_modified: '2022-11-09T00:00:00Z'
+  resource: https://docs.oasis-open.org/csaf/csaf/v2.0/os/csaf-v2.0-os.html
+  title: Common Security Advisory Framework Version 2.0 (CSAF v2.0)
+  author: OASIS Open
+  last_modified: '2022-11-18T00:00:00Z'
 x-cvd:
   jurisdiction: International
   authority_level: rule
@@ -42,7 +36,7 @@ x-cvd:
 
 # Summary
 
-**Advisory Publication and Patch Release** is the culminating stage of the coordinated vulnerability disclosure lifecycle, in which the vendor PSIRT publicly releases remediation patches, publishes a security advisory, and transitions the assigned CVE ID to the `PUBLISHED` state[^iso-iec-29147][^cve-program].
+**Advisory Publication and Patch Release** is the culminating stage of the coordinated vulnerability disclosure lifecycle, in which the vendor PSIRT publicly releases remediation patches, publishes a security advisory, and transitions the assigned CVE ID to the `PUBLISHED` state[^first-cvd-guide].
 
 # Synchronized Release Checklist
 
@@ -53,9 +47,8 @@ x-cvd:
 
 # Related concepts
 - [CSAF 2.0 Security Advisory Profile](../formats/csaf/csaf-security-advisory.md)
-- [Section 4: CVE Record Requirements and Publishing](../programmes/cve/cna-operational-rules/section-4-record-publishing.md)
+- [Section 4: CVE Record Requirements and Publishing](../programmes/cve/cna-operational-rules/section-4-cna-operational-rules.md)
 - [cnaContainer (CNA Content)](../programmes/cve/record-format/cna-container.md)
 
-[^iso-iec-29147]: International Organization for Standardization (ISO) / IEC, ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure, https://www.iso.org/standard/72311.html
-[^cve-program]: CVE Program / The MITRE Corporation, CVE Numbering Authority (CNA) Operational Rules Version 4.0, https://www.cve.org/ResourcesSupport/AllResources/CNARules
-[^oasis-csaf-2-0]: OASIS Common Security Advisory Framework TC, Common Security Advisory Framework (CSAF) Version 2.0, https://docs.oasis-open.org/csaf/csaf/v2.0/csaf-v2.0.html
+[^first-cvd-guide]: Forum of Incident Response and Security Teams (FIRST), Guidelines for Coordinated Vulnerability Disclosure (FIRST CVD v1.1), https://www.first.org/global/sigs/vulnerability-coordination/multiparty/guidelines-v1.1
+[^oasis-csaf-2-0]: OASIS Open, Common Security Advisory Framework Version 2.0 (CSAF v2.0), https://docs.oasis-open.org/csaf/csaf/v2.0/os/csaf-v2.0-os.html

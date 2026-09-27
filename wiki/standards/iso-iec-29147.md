@@ -13,7 +13,7 @@ status: draft
 generated:
   by: agent:kb-researcher-writer
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2028-06-30T00:00:00Z'
 sources:
 - id: iso-iec-29147
   resource: https://www.iso.org/standard/72311.html

@@ -1,7 +1,8 @@
-# Roots and CNAs
-
-Top-Level Roots, Roots including the ENISA Root, CNA types, CNA of Last Resort, Authorized Data Publishers, the partner list.
+# Roots And Cnas
 
 ## Concepts
-
-- [CVE Root Hierarchy and Delegation Model](root-hierarchy-and-delegation.md) — Governance structure connecting the Secretariat, Top-Level Roots, and Roots to individual CNAs across industry domains.
+- [Cna Lr](cna-lr.md)
+- [Cna Types](cna-types.md)
+- [Enisa Root](enisa-root.md)
+- [Root Hierarchy And Delegation](root-hierarchy-and-delegation.md)
+- [Top Level Roots](top-level-roots.md)

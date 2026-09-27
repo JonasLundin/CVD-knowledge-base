@@ -1,59 +1,185 @@
 version: 1
 checked_at: '2026-09-27T00:00:00Z'
-total_sources: 6
+total_sources: 24
 sources:
-  cve-program:
-    id: cve-program
-    resource: https://www.cve.org/ResourcesSupport/AllResources/CNARules
-    title: CVE Numbering Authority (CNA) Operational Rules Version 4.0
-    author: CVE Program / The MITRE Corporation
-    last_modified: '2024-03-01T00:00:00Z'
+  cve-operational-rules-4-2-0:
+    id: cve-operational-rules-4-2-0
+    resource: https://www.cve.org/Resources/Roles/Cnas/CNA_Rules_v4.2.0.pdf
+    title: CVE Numbering Authority (CNA) Operational Rules, Version 4.2.0
+    author: CVE Program
+    last_modified: '2026-08-25T00:00:00Z'
     used_by:
+    - guidance/cve-program/cve-assignment-guidelines
     - programmes/cve-program
-    - programmes/cve/cna-operational-rules/section-1-program-overview
-    - programmes/cve/cna-operational-rules/section-2-eligibility-and-onboarding
-    - programmes/cve/cna-operational-rules/section-3-id-assignment-rules
-    - programmes/cve/cna-operational-rules/section-4-record-publishing
-    - programmes/cve/cna-operational-rules/section-5-embargo-management
-    - programmes/cve/cna-operational-rules/section-6-dispute-resolution
-    - programmes/cve/record-format/adp-container
-    - programmes/cve/record-format/cna-container
-    - programmes/cve/record-format/cve-tag-container
-    - programmes/cve/record-format/rejected-container
-    - reference-data/cwe/cwe
+    - programmes/cve/cna-operational-rules/section-1-introduction
+    - programmes/cve/cna-operational-rules/section-2-managing-the-cna-operational-rules
+    - programmes/cve/cna-operational-rules/section-3-cna-administration
+    - programmes/cve/cna-operational-rules/section-4-cna-operational-rules
+    - programmes/cve/cna-operational-rules/section-5-cve-record-content
+    - programmes/cve/cna-operational-rules/section-6-revision-history
+    - programmes/cve/cve-services
+    - programmes/cve/roots-and-cnas/cna-lr
+    - programmes/cve/roots-and-cnas/cna-types
+    - programmes/cve/roots-and-cnas/enisa-root
+    - programmes/cve/roots-and-cnas/root-hierarchy-and-delegation
+    - programmes/cve/roots-and-cnas/top-level-roots
     - roles/authorized-data-publisher
     - roles/cna
-    - roles/coordinator
-    - roles/finder
+    - roles/root
     - roles/secretariat
-    - roles/vendor-psirt
+    - roles/top-level-root
+    - timeline/cna-rules-v4-2-0
+    - timeline/enisa-cve-root
+  cve-schema-5-2-0:
+    id: cve-schema-5-2-0
+    resource: https://cveproject.github.io/cve-schema
+    title: CVE JSON Record Schema, Specification Version 5.2.0
+    author: CVE Project
+    last_modified: '2025-10-29T00:00:00Z'
+    used_by:
+    - programmes/cve/record-format/adp-container
+    - programmes/cve/record-format/cna-container
+    - programmes/cve/record-format/cve-metadata
+    - programmes/cve/record-format/cve-tags
+    - programmes/cve/record-format/rejected-record
+    - reference-data/identifiers/cpe
+    - reference-data/identifiers/cve-id-syntax
+    - reference-data/identifiers/purl
+    - reference-data/identifiers/swid
     - timeline/cve-v5-record-format
-    - timeline/cvss-v4-release
-    - timeline/euvd-operational-launch
   oasis-csaf-2-0:
     id: oasis-csaf-2-0
-    resource: https://docs.oasis-open.org/csaf/csaf/v2.0/csaf-v2.0.html
-    title: Common Security Advisory Framework (CSAF) Version 2.0
-    author: OASIS Common Security Advisory Framework TC
-    last_modified: '2022-11-09T00:00:00Z'
+    resource: https://docs.oasis-open.org/csaf/csaf/v2.0/os/csaf-v2.0-os.html
+    title: Common Security Advisory Framework Version 2.0 (CSAF v2.0)
+    author: OASIS Open
+    last_modified: '2022-11-18T00:00:00Z'
     used_by:
+    - formats/csaf/csaf-aggregators
     - formats/csaf/csaf-base
+    - formats/csaf/csaf-distribution
     - formats/csaf/csaf-informational-advisory
     - formats/csaf/csaf-security-advisory
     - formats/csaf/csaf-security-incident-response
     - formats/csaf/csaf-vex
-  iso-iec-29147:
-    id: iso-iec-29147
-    resource: https://www.iso.org/standard/72311.html
-    title: "ISO/IEC 29147:2018 Information technology \u2014 Security techniques \u2014\
-      \ Vulnerability disclosure"
-    author: International Organization for Standardization (ISO) / IEC
-    last_modified: '2018-10-01T00:00:00Z'
+    - formats/csaf/provider-metadata
+    - formats/vex/cyclonedx-vex
+    - formats/vex/openvex
+    - process/advisory-lifecycle
+    - process/advisory-publication
+  first-cvd-guide:
+    id: first-cvd-guide
+    resource: https://www.first.org/global/sigs/vulnerability-coordination/multiparty/guidelines-v1.1
+    title: Guidelines and Practices for Multi-Party Vulnerability Coordination and
+      Disclosure (v1.1)
+    author: Forum of Incident Response and Security Teams (FIRST)
+    last_modified: '2020-09-01T00:00:00Z'
     used_by:
     - glossary/coordinated-vulnerability-disclosure
-    - glossary/proof-of-concept
     - glossary/safe-harbor
-    - glossary/zero-day
+    - process/advisory-publication
+    - process/bug-bounty-interfaces
+    - process/embargo-management
+    - process/intake-and-reporting
+    - process/multi-party-coordination
+    - process/safe-harbour
+    - roles/coordinator
+    - roles/downstream-distributor
+    - roles/finder
+    - roles/vendor-psirt
+  first-psirt-services-framework:
+    id: first-psirt-services-framework
+    resource: https://www.first.org/standards/frameworks/psirts/
+    title: FIRST PSIRT Services Framework v1.1
+    author: Forum of Incident Response and Security Teams (FIRST)
+    last_modified: '2021-03-01T00:00:00Z'
+    used_by:
+    - process/psirt-operations
+    - roles/vendor-psirt
+    - standards/first-psirt-services-framework
+  first-cvss-v4-0:
+    id: first-cvss-v4-0
+    resource: https://www.first.org/cvss/v4.0
+    title: Common Vulnerability Scoring System Version 4.0 (CVSS v4.0) Specification
+    author: Forum of Incident Response and Security Teams (FIRST)
+    last_modified: '2023-11-01T00:00:00Z'
+    used_by:
+    - reference-data/cvss/cvss-v4-0
+    - timeline/cvss-v4-release
+    - process/triage-and-validation
+  first-cvss-v3-1:
+    id: first-cvss-v3-1
+    resource: https://www.first.org/cvss/v3.1
+    title: Common Vulnerability Scoring System Version 3.1 (CVSS v3.1) Specification
+    author: Forum of Incident Response and Security Teams (FIRST)
+    last_modified: '2019-06-10T00:00:00Z'
+    used_by:
+    - reference-data/cvss/cvss-v3-1
+  first-epss:
+    id: first-epss
+    resource: https://www.first.org/epss
+    title: Exploit Prediction Scoring System (EPSS)
+    author: Forum of Incident Response and Security Teams (FIRST)
+    last_modified: '2023-03-07T00:00:00Z'
+    used_by:
+    - reference-data/epss/epss
+  certcc-ssvc:
+    id: certcc-ssvc
+    resource: https://certcc.github.io/SSVC/
+    title: Stakeholder-Specific Vulnerability Categorization (SSVC)
+    author: Carnegie Mellon University Software Engineering Institute (CERT/CC)
+    last_modified: '2023-11-01T00:00:00Z'
+    used_by:
+    - reference-data/ssvc/ssvc
+  certcc-cvd-guide:
+    id: certcc-cvd-guide
+    resource: https://vuls.cert.org/confluence/display/CVD
+    title: The CERT Guide to Coordinated Vulnerability Disclosure
+    author: Carnegie Mellon University Software Engineering Institute (CERT/CC)
+    last_modified: '2021-01-01T00:00:00Z'
+    used_by:
+    - guidance/cert-cc/cert-cc-vulnerability-guide
+  cisa-kev:
+    id: cisa-kev
+    resource: https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+    title: Known Exploited Vulnerabilities Catalog
+    author: Cybersecurity and Infrastructure Security Agency (CISA)
+    last_modified: '2026-06-10T00:00:00Z'
+    used_by:
+    - reference-data/kev/kev
+  cisa-cvd-guide:
+    id: cisa-cvd-guide
+    resource: https://www.cisa.gov/coordinated-vulnerability-disclosure-process
+    title: CISA Coordinated Vulnerability Disclosure Process
+    author: Cybersecurity and Infrastructure Security Agency (CISA)
+    last_modified: '2023-08-01T00:00:00Z'
+    used_by:
+    - guidance/cisa/cisa-vulnerability-disclosure-guidelines
+  enisa-euvd:
+    id: enisa-euvd
+    resource: https://euvd.enisa.europa.eu
+    title: European Vulnerability Database Portal
+    author: European Union Agency for Cybersecurity (ENISA)
+    last_modified: '2025-05-13T00:00:00Z'
+    used_by:
+    - programmes/cve/roots-and-cnas/enisa-root
+    - programmes/euvd
+    - timeline/euvd-operational-launch
+  enisa-cvd-guide:
+    id: enisa-cvd-guide
+    resource: https://www.enisa.europa.eu/publications/coordinated-vulnerability-disclosure-policies-in-the-eu
+    title: Coordinated Vulnerability Disclosure Policies in the EU
+    author: European Union Agency for Cybersecurity (ENISA)
+    last_modified: '2022-04-01T00:00:00Z'
+    used_by:
+    - guidance/enisa/enisa-cvd-good-practices
+  eu-nis2-directive:
+    id: eu-nis2-directive
+    resource: http://data.europa.eu/eli/dir/2022/2555/oj
+    title: Directive (EU) 2022/2555 on measures for a high common level of cybersecurity
+      across the Union (NIS2)
+    author: European Parliament and Council of the European Union
+    last_modified: '2022-12-14T00:00:00Z'
+    used_by:
     - jurisdictions/eea/iceland
     - jurisdictions/eea/liechtenstein
     - jurisdictions/eea/norway
@@ -84,17 +210,53 @@ sources:
     - jurisdictions/eu-member-states/slovenia
     - jurisdictions/eu-member-states/spain
     - jurisdictions/eu-member-states/sweden
-    - process/advisory-publication
-    - process/embargo-management
-    - process/intake-and-reporting
-    - process/multi-party-coordination
-    - process/triage-and-validation
-    - roles/authorized-data-publisher
-    - roles/cna
-    - roles/coordinator
-    - roles/finder
-    - roles/secretariat
-    - roles/vendor-psirt
+    - jurisdictions/other/united-states
+    - law/eu/nis2-article-12
+    - programmes/euvd
+    - roles/csirt
+    - timeline/euvd-operational-launch
+  eu-cra-regulation:
+    id: eu-cra-regulation
+    resource: http://data.europa.eu/eli/reg/2024/2847/oj
+    title: Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for
+      products with digital elements (Cyber Resilience Act)
+    author: European Parliament and Council of the European Union
+    last_modified: '2024-11-20T00:00:00Z'
+    used_by:
+    - law/eu/cra-vulnerability-handling
+  mitre-cwe:
+    id: mitre-cwe
+    resource: https://cwe.mitre.org
+    title: Common Weakness Enumeration (CWE)
+    author: The MITRE Corporation
+    last_modified: '2024-03-01T00:00:00Z'
+    used_by:
+    - reference-data/cwe/cwe
+  rfc-9116:
+    id: rfc-9116
+    resource: https://www.rfc-editor.org/rfc/rfc9116
+    title: 'RFC 9116: A File Format to Aid in Security Vulnerability Disclosure'
+    author: Internet Engineering Task Force (IETF)
+    last_modified: '2022-04-01T00:00:00Z'
+    used_by:
+    - formats/security-txt/rfc-9116-security-txt
+  cve-glossary:
+    id: cve-glossary
+    resource: https://www.cve.org/Resources/General/Glossary
+    title: CVE Program Terminology and Glossary
+    author: CVE Program
+    last_modified: '2024-03-01T00:00:00Z'
+    used_by:
+    - glossary/proof-of-concept
+    - glossary/zero-day
+  iso-iec-29147:
+    id: iso-iec-29147
+    resource: https://www.iso.org/standard/72311.html
+    title: "ISO/IEC 29147:2018 Information technology \u2014 Security techniques \u2014\
+      \ Vulnerability disclosure"
+    author: International Organization for Standardization (ISO) / IEC
+    last_modified: '2018-10-01T00:00:00Z'
+    used_by:
     - standards/iso-iec-29147
   iso-iec-30111:
     id: iso-iec-30111
@@ -104,60 +266,32 @@ sources:
     author: International Organization for Standardization (ISO) / IEC
     last_modified: '2019-10-01T00:00:00Z'
     used_by:
-    - process/advisory-publication
     - process/embargo-management
-    - process/intake-and-reporting
-    - process/multi-party-coordination
     - process/triage-and-validation
     - standards/iso-iec-30111
-  first-cvss-v4:
-    id: first-cvss-v4
-    resource: https://www.first.org/cvss/v4-0/specification-document
-    title: Common Vulnerability Scoring System (CVSS) Specification Document Version
-      4.0
-    author: Forum of Incident Response and Security Teams (FIRST)
-    last_modified: '2023-11-01T00:00:00Z'
+  etsi-tr-103-838:
+    id: etsi-tr-103-838
+    resource: https://www.etsi.org/deliver/etsi_tr/103800_103899/103838/01.01.01_60/tr_103838v010101p.pdf
+    title: 'ETSI TR 103 838: CYBER; Coordinated Vulnerability Disclosure in the European
+      Ecosystem'
+    author: European Telecommunications Standards Institute (ETSI)
+    last_modified: '2023-04-01T00:00:00Z'
     used_by:
-    - reference-data/cvss/cvss-v3-1
-    - reference-data/cvss/cvss-v4-0
-    - reference-data/epss/epss
+    - standards/etsi-tr-103-838
+  fr-code-defense-l2321-4:
+    id: fr-code-defense-l2321-4
+    resource: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033219460
+    title: "Code de la d\xE9fense \u2014 Article L. 2321-4"
+    author: "R\xE9publique Fran\xE7aise"
+    last_modified: '2016-10-09T00:00:00Z'
+    used_by:
+    - law/national/french-anssi-cvd-regime
+  cisa-bod-22-01:
+    id: cisa-bod-22-01
+    resource: https://www.cisa.gov/news-events/directives/bod-22-01-reducing-significant-risk-known-exploited-vulnerabilities
+    title: 'Binding Operational Directive 22-01: Reducing the Significant Risk of
+      Known Exploited Vulnerabilities'
+    author: Cybersecurity and Infrastructure Security Agency (CISA)
+    last_modified: '2021-11-03T00:00:00Z'
+    used_by:
     - reference-data/kev/kev
-    - reference-data/ssvc/ssvc
-  nis2-directive:
-    id: nis2-directive
-    resource: http://data.europa.eu/eli/dir/2022/2555/oj
-    title: Directive (EU) 2022/2555 on measures for a high common level of cybersecurity
-      across the Union (NIS2)
-    author: European Parliament and Council of the European Union
-    last_modified: '2022-12-14T00:00:00Z'
-    used_by:
-    - jurisdictions/eu-member-states/austria
-    - jurisdictions/eu-member-states/belgium
-    - jurisdictions/eu-member-states/bulgaria
-    - jurisdictions/eu-member-states/croatia
-    - jurisdictions/eu-member-states/cyprus
-    - jurisdictions/eu-member-states/czechia
-    - jurisdictions/eu-member-states/denmark
-    - jurisdictions/eu-member-states/estonia
-    - jurisdictions/eu-member-states/finland
-    - jurisdictions/eu-member-states/france
-    - jurisdictions/eu-member-states/germany
-    - jurisdictions/eu-member-states/greece
-    - jurisdictions/eu-member-states/hungary
-    - jurisdictions/eu-member-states/ireland
-    - jurisdictions/eu-member-states/italy
-    - jurisdictions/eu-member-states/latvia
-    - jurisdictions/eu-member-states/lithuania
-    - jurisdictions/eu-member-states/luxembourg
-    - jurisdictions/eu-member-states/malta
-    - jurisdictions/eu-member-states/netherlands
-    - jurisdictions/eu-member-states/poland
-    - jurisdictions/eu-member-states/portugal
-    - jurisdictions/eu-member-states/romania
-    - jurisdictions/eu-member-states/slovakia
-    - jurisdictions/eu-member-states/slovenia
-    - jurisdictions/eu-member-states/spain
-    - jurisdictions/eu-member-states/sweden
-    - law/eu/cra-vulnerability-handling
-    - law/eu/nis2-article-11
-    - programmes/euvd

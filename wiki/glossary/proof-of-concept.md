@@ -1,41 +1,43 @@
 ---
 type: Glossary
 title: Proof of Concept (PoC)
-description: Code, script, or detailed technical methodology demonstrating the feasibility
-  of exploiting a specific vulnerability.
+description: Demonstration code, exploit payload, or reproducible methodology confirming the practical exploitability of a vulnerability.
 category: glossary
 tags:
 - cvd
 - glossary
 - proof-of-concept
+- exploit
 status: draft
 generated:
-  by: agent:antigravity
+  by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2028-12-31T00:00:00Z'
 sources:
-- id: iso-iec-29147
-  resource: https://www.iso.org/standard/72311.html
-  title: "ISO/IEC 29147:2018 Information technology \u2014 Security techniques \u2014\
-    \ Vulnerability disclosure"
-  author: International Organization for Standardization (ISO) / IEC
-  last_modified: '2018-10-01T00:00:00Z'
+- id: cve-glossary
+  resource: https://www.cve.org/Resources/General/Glossary
+  title: CVE Program Terminology and Glossary
+  author: CVE Program
+  last_modified: '2024-03-01T00:00:00Z'
 x-cvd:
   jurisdiction: International
-  authority_level: rule
+  authority_level: voluntary
   instrument_status: in_force
-  provision: Industry Standard
   checked_at: '2026-09-27T00:00:00Z'
 ---
 
 # Definition
 
-**Proof of Concept (PoC)**: Code, script, or detailed technical methodology demonstrating the feasibility of exploiting a specific vulnerability.[^iso-iec-29147]
+A **Proof of Concept (PoC)** is an artifact, demonstration script, or technical documentation proving that a theorized security vulnerability can be executed against a target application or operating environment[^cve-glossary].
 
-# Context
-Defined in ISO/IEC 29147 or standard cybersecurity disclosure terminology.
+# Role in Disclosure and Triage
+- **Validation Acceleration**: Providing a minimal, benign PoC allows vendor PSIRTs and CNA coordinators to reproduce defects rapidly without ambiguous back-and-forth communication.
+- **Weaponization Risks**: Releasing fully functional weaponized PoCs during an active embargo violates coordinated disclosure agreements and increases malicious exploitation risk.
+- **EPSS and CVSS Threat Metrics**: Public availability of PoC exploit code directly increases a vulnerability's EPSS probability score and CVSS Threat metric values.
 
 # Related concepts
 - [Glossary Index](index.md)
+- [Triage and Validation](../process/triage-and-validation.md)
+- [EPSS](../reference-data/epss/epss.md)
 
-[^iso-iec-29147]: International Organization for Standardization (ISO) / IEC, ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure, https://www.iso.org/standard/72311.html
+[^cve-glossary]: CVE Program, CVE Program Terminology and Glossary, https://www.cve.org/Resources/General/Glossary

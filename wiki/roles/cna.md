@@ -16,11 +16,11 @@ generated:
   at: '2026-09-27T00:00:00Z'
 stale_after: '2027-12-31T00:00:00Z'
 sources:
-- id: cve-program
-  resource: https://www.cve.org/ResourcesSupport/AllResources/CNARules
-  title: CVE Numbering Authority (CNA) Operational Rules Version 4.0
-  author: CVE Program / The MITRE Corporation
-  last_modified: '2024-03-01T00:00:00Z'
+- id: cve-operational-rules-4-2-0
+  resource: https://www.cve.org/Resources/Roles/Cnas/CNA_Rules_v4.2.0.pdf
+  title: CVE Numbering Authority (CNA) Operational Rules, Version 4.2.0
+  author: CVE Program
+  last_modified: '2026-08-25T00:00:00Z'
 x-cvd:
   jurisdiction: International
   authority_level: rule
@@ -31,7 +31,7 @@ x-cvd:
 
 # Summary
 
-A **CVE Numbering Authority (CNA)** is an organization authorized by the CVE Program to assign CVE Identifiers to vulnerabilities affecting products within their agreed-upon organizational scope and to populate and publish official CVE Records[^cve-program].
+A **CVE Numbering Authority (CNA)** is an organization authorized by the CVE Program to assign CVE Identifiers to vulnerabilities affecting products within their agreed-upon organizational scope and to populate and publish official CVE Records[^cve-operational-rules-4-2-0].
 
 # CNA Types & Scopes
 
@@ -42,8 +42,8 @@ A **CVE Numbering Authority (CNA)** is an organization authorized by the CVE Pro
 
 # Related concepts
 - [The CVE Program](../programmes/cve-program.md)
-- [Section 1: CNA Program Overview](../programmes/cve/cna-operational-rules/section-1-program-overview.md)
-- [Section 3: CVE ID Assignment Rules](../programmes/cve/cna-operational-rules/section-3-id-assignment-rules.md)
+- [Section 1: CNA Program Overview](../programmes/cve/cna-operational-rules/section-1-introduction.md)
+- [Section 3: CVE ID Assignment Rules](../programmes/cve/cna-operational-rules/section-4-cna-operational-rules.md)
 - [cnaContainer (CNA Content)](../programmes/cve/record-format/cna-container.md)
 
-[^cve-program]: CVE Program / The MITRE Corporation, CVE Numbering Authority (CNA) Operational Rules Version 4.0, https://www.cve.org/ResourcesSupport/AllResources/CNARules
+[^cve-operational-rules-4-2-0]: CVE Program, CVE Numbering Authority (CNA) Operational Rules, Version 4.2.0, https://www.cve.org/Resources/Roles/Cnas/CNA_Rules_v4.2.0.pdf

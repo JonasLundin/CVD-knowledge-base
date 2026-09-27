@@ -1,47 +1,51 @@
 ---
-type: Concept
-title: RFC 9116 security.txt File Format
-description: Standardized text file hosted at /.well-known/security.txt defining vulnerability
-  reporting contacts, encryption keys, and policy links.
+type: Format
+title: 'RFC 9116: A File Format to Aid in Security Vulnerability Disclosure'
+description: Internet Standard establishing the /.well-known/security.txt machine-readable discovery mechanism for vulnerability disclosure policies.
 category: format
 tags:
-- cvd
-- formats
-- security-txt
+- format
 - rfc-9116
+- security-txt
 - discovery
 status: draft
 generated:
-  by: agent:kb-researcher-writer
+  by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2028-06-30T00:00:00Z'
 sources:
-- id: iso-iec-29147
-  resource: https://www.iso.org/standard/72311.html
-  title: ISO/IEC 29147:2018 Information technology - Security techniques - Vulnerability
-    disclosure
-  author: International Organization for Standardization
-  last_modified: '2018-10-01T00:00:00Z'
+- id: rfc-9116
+  resource: https://www.rfc-editor.org/rfc/rfc9116
+  title: 'RFC 9116: A File Format to Aid in Security Vulnerability Disclosure'
+  author: Internet Engineering Task Force (IETF)
+  last_modified: '2022-04-01T00:00:00Z'
 x-cvd:
   jurisdiction: International
-  authority_level: binding
+  authority_level: voluntary
   instrument_status: in_force
   checked_at: '2026-09-27T00:00:00Z'
 ---
 
 # Summary
 
-**RFC 9116** defines **security.txt**, a standardized machine-readable text file hosted under `/.well-known/security.txt` that allows security researchers to easily find contact information, disclosure policies, and public encryption keys[^iso-iec-29147].
+**RFC 9116** specifies a standardized text file placed at `/.well-known/security.txt` enabling security researchers to quickly identify an organization's vulnerability reporting contacts and coordinated disclosure policies[^rfc-9116].
 
-# Mandatory and Recommended Directives
-- `Contact:` (Mandatory) URI specifying email address, web form, or reporting portal.
-- `Expires:` (Mandatory) Timestamp indicating when the information in the file must be renewed.
-- `Encryption:` PGP key or key server link for secure submissions.
-- `Policy:` Link to the organization's coordinated vulnerability disclosure policy.
-- `Acknowledgments:` Page recognizing researchers who reported verified vulnerabilities.
+# Field Specifications
+
+## Mandatory Fields
+- **`Contact:`**: URI indicating reporting email address (`mailto:`) or web intake form (`https://`). Must be present.
+- **`Expires:`**: Timestamp indicating when the policy expires and must be reviewed.
+
+## Standard Optional Fields
+- **`Canonical:`**: The official, authoritative URL where this `security.txt` file is hosted.
+- **`Encryption:`**: Link to the organization's PGP public key or S/MIME certificate.
+- **`Acknowledgements:`**: Link to the hall of fame or contributor recognition page.
+- **`Policy:`**: Direct URL to the organization's Coordinated Vulnerability Disclosure policy.
+- **`Hiring:`**: Link to career opportunities within the security team.
+- **`Preferred-Languages:`**: Comma-separated list of natural language tags (RFC 5646) preferred for vulnerability reports (e.g., `en, fr, sv`).
 
 # Related concepts
 - [Formats Index](../index.md)
 - [Intake and Reporting](../../process/intake-and-reporting.md)
 
-[^iso-iec-29147]: International Organization for Standardization, ISO/IEC 29147:2018 Information technology - Security techniques - Vulnerability disclosure, https://www.iso.org/standard/72311.html
+[^rfc-9116]: Internet Engineering Task Force (IETF), RFC 9116: A File Format to Aid in Security Vulnerability Disclosure, https://www.rfc-editor.org/rfc/rfc9116

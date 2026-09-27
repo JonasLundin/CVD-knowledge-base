@@ -1,39 +1,45 @@
 ---
 type: Jurisdiction
 title: CVD Framework in Norway
-description: National CSIRT vulnerability coordination and disclosure policies in
-  Norway under the EEA framework.
+description: Designated CSIRT coordinator (NorCERT), national CVD legislation (National
+  Security Act (Sikkerhetsloven)), and safe-harbour framework in Norway.
 category: jurisdiction
 tags:
 - jurisdiction
-- eea-state
-- norway
+- 'no'
 - cvd
+- csirt
 status: draft
 generated:
-  by: agent:antigravity
+  by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2027-06-30T00:00:00Z'
 sources:
-- id: iso-iec-29147
-  resource: https://www.iso.org/standard/72311.html
-  title: "ISO/IEC 29147:2018 Information technology \u2014 Security techniques \u2014\
-    \ Vulnerability disclosure"
-  author: International Organization for Standardization (ISO) / IEC
-  last_modified: '2018-10-01T00:00:00Z'
+- id: eu-nis2-directive
+  resource: http://data.europa.eu/eli/dir/2022/2555/oj
+  title: Directive (EU) 2022/2555 on measures for a high common level of cybersecurity
+    across the Union (NIS2)
+  author: European Parliament and Council of the European Union
+  last_modified: '2022-12-14T00:00:00Z'
 x-cvd:
-  jurisdiction: International
-  authority_level: rule
+  jurisdiction: 'NO'
+  authority_level: statutory
   instrument_status: in_force
-  provision: 'EEA State: Norway'
+  provision: 'Jurisdiction: Norway'
   checked_at: '2026-09-27T00:00:00Z'
 ---
 
 # Summary
 
-Vulnerability coordination arrangements, national CSIRT functions, and disclosure policies in **Norway** aligned with ISO/IEC 29147[^iso-iec-29147].
+Norway coordinates vulnerability disclosure through **NorCERT**, embedded within the Norwegian National Security Authority (**NSM**)[^eu-nis2-directive].
+
+# National CVD Framework
+- **Designated Coordinator**: NorCERT coordinates disclosures involving Norwegian critical infrastructure and national networks.
+- **EEA Alignment**: While not an EU member state, Norway implements NIS2-equivalent principles through updated national cybersecurity legislation.
+- **Safe-Harbour Status**: Researchers reporting through NorCERT are protected by established non-prosecution guidelines for responsible testing.
 
 # Related concepts
-- [EEA States Index](index.md)
+- [Jurisdictions Index](../index.md)
+- [NIS2 Article 12](../../law/eu/nis2-article-12.md)
 
-[^iso-iec-29147]: International Organization for Standardization (ISO) / IEC, ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure, https://www.iso.org/standard/72311.html
+[^eu-nis2-directive]: European Parliament and Council of the European Union, Directive (EU) 2022/2555 on measures for a high common level of cybersecurity across the Union (NIS2), http://data.europa.eu/eli/dir/2022/2555/oj

@@ -17,12 +17,11 @@ generated:
   at: '2026-09-27T00:00:00Z'
 stale_after: '2027-12-31T00:00:00Z'
 sources:
-- id: iso-iec-29147
-  resource: https://www.iso.org/standard/72311.html
-  title: ISO/IEC 29147:2018 Information technology - Security techniques - Vulnerability
-    disclosure
-  author: International Organization for Standardization
-  last_modified: '2018-10-01T00:00:00Z'
+- id: cve-operational-rules-4-2-0
+  resource: https://www.cve.org/Resources/Roles/Cnas/CNA_Rules_v4.2.0.pdf
+  title: CVE Numbering Authority (CNA) Operational Rules, Version 4.2.0
+  author: CVE Program
+  last_modified: '2026-08-25T00:00:00Z'
 x-cvd:
   jurisdiction: International
   authority_level: binding
@@ -32,16 +31,22 @@ x-cvd:
 
 # Summary
 
-The **CVE Program** employs a distributed hierarchical delegation model ensuring scalable governance of hundreds of CNAs worldwide[^iso-iec-29147].
+The **CVE Program** employs a distributed hierarchical delegation model ensuring scalable governance, scoping, and oversight of hundreds of CVE Numbering Authorities (CNAs) worldwide[^cve-operational-rules-4-2-0].
 
-# Structural Tiers
-1. **CVE Secretariat**: Operates root administrative services, program policies, and primary registry backups (MITRE).
-2. **Top-Level Roots (TLRs)**: Entities with broad domain oversight (e.g., CISA for US ICS/OT; ENISA/CISA cooperation).
-3. **Roots**: Manage specific clusters of CNAs (e.g., Red Hat Root for Open Source, Siemens Root for Industrial).
-4. **CNAs**: Vendor and researcher organizations authorized to assign CVE IDs to vulnerabilities within their scope.
+# Governance Tiers
+
+1. **CVE Secretariat**: Administered by MITRE Corporation under CVE Board oversight. The Secretariat manages primary registry services, user authentication, global namespace infrastructure, and backup CNA of Last Resort (CNA-LR) operations.
+2. **Top-Level Roots (TL-Roots)**: Organizations delegated overarching regional or sectoral authority. Notably, **CISA** serves as a Top-Level Root for civilian US infrastructure, while **ENISA** operates as a Top-Level Root (TL-Root) covering European Member States, coordinating national CSIRTs and synchronizing data with the European Vulnerability Database (EUVD).
+3. **Roots**: Entities managing designated families of operational CNAs within defined market sectors or ecosystems. For example, **Siemens Root** oversees industrial automation, OT, and medical technology CNAs; **Red Hat Root** coordinates open-source project CNAs; and **Google Root** administers products across the Google and Android ecosystem.
+4. **CNAs**: Vendor, researcher, and coordinator organizations authorized to assign CVE IDs to vulnerabilities strictly within their approved scope definitions.
+
+# Operational Contract and Scope Rules
+
+Under Section 3 and Section 4 of the CNA Operational Rules, Roots actively supervise child CNAs, conduct regular operational reviews, resolve scope conflicts, and handle escalations if a child CNA fails to publish records within mandatory clocks.
 
 # Related concepts
 - [Roots and CNAs Index](index.md)
-- [CNA Role](../../../roles/cna.md)
+- [CNA Role](/roles/cna.md)
+- [ENISA Root](enisa-root.md)
 
-[^iso-iec-29147]: International Organization for Standardization, ISO/IEC 29147:2018 Information technology - Security techniques - Vulnerability disclosure, https://www.iso.org/standard/72311.html
+[^cve-operational-rules-4-2-0]: CVE Program, CVE Numbering Authority (CNA) Operational Rules, Version 4.2.0, https://www.cve.org/Resources/Roles/Cnas/CNA_Rules_v4.2.0.pdf
