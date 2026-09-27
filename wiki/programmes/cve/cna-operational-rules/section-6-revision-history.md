@@ -29,18 +29,21 @@ x-cvd:
 
 # Summary
 
-**Section 6 (Revision History)** provides the formal record of revisions and amendments to the CNA Operational Rules across all published versions[^cve-operational-rules-4-2-0].
+**Section 6 (Revision History)** provides the formal audit trail of revisions and amendments to the CNA Operational Rules across published versions[^cve-operational-rules-4-2-0].
 
-# Major Iterations
+> [!NOTE]
+> **Legal Nature**: The revision history tracks contractual operational rule versions governing CNAs rather than legislative enactments.
 
-| Version | Approval Date | Effective Date | Summary of Changes |
+# Major Specification Versions
+
+| Version | Approval Date | Effective Date | Context and Focus |
 |---|---|---|---|
-| **v4.2.0** | 2026-08-20 | 2026-08-25 | Revised publication clocks (§4.5.1.3 / §4.5.1.4), clarified Root authority structures, and updated record content rules to align with CVE Schema 5.2.0. |
-| **v4.1.0** | 2025-04-15 | 2025-05-01 | Streamlined CNA-LR intake procedures and established formal Authorized Data Publisher (ADP) rules. |
-| **v4.0.0** | 2024-02-15 | 2024-03-01 | Transition to CVE JSON 5.0 and reorganization of rule chapters. |
+| **v4.2.0** | 2026-08-20 | 2026-08-25 | Revised publication timelines, streamlined Root oversight structures, and updated record formatting requirements. |
+| **v4.1.0** | 2025-05-14 | 2025-05-14 | Clarified CNA of Last Resort (CNA-LR) responsibilities and authorized data workflows. |
+| **v4.0.0** | 2024-05-08 | 2024-05-08 | Transition to CVE JSON 5.0 record architecture and comprehensive reorganization of operational chapters. |
 
 # Related concepts
 - [CNA Operational Rules Index](index.md)
-- [Timeline](../../../formats/vex/index.md)
+- [VEX Formats](/formats/vex/index.md)
 
 [^cve-operational-rules-4-2-0]: CVE Program, CVE Numbering Authority (CNA) Operational Rules, Version 4.2.0, https://www.cve.org/Resources/Roles/Cnas/CNA_Rules_v4.2.0.pdf

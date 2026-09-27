@@ -17,7 +17,7 @@ generated:
 stale_after: '2027-12-31T00:00:00Z'
 sources:
 - id: first-cvd-guide
-  resource: https://www.first.org/global/sigs/vulnerability-coordination/multiparty/cvd-v1.1
+  resource: https://www.first.org/global/sigs/vulnerability-coordination/multiparty/guidelines-v1.1
   title: Guidelines for Coordinated Vulnerability Disclosure (FIRST CVD v1.1)
   author: Forum of Incident Response and Security Teams (FIRST)
   last_modified: '2020-09-01T00:00:00Z'
@@ -31,7 +31,7 @@ x-cvd:
 
 # Summary
 
-**Multi-Party Vulnerability Coordination** is the specialized coordination procedure required when a single vulnerability impacts multiple downstream vendors, an industry-wide protocol (e.g. TLS, BGP), a widely used open-source library (e.g. OpenSSL, Log4j), or common silicon hardware architecture (e.g. Spectre, Meltdown).
+**Multi-Party Vulnerability Coordination** is the specialized coordination procedure required when a single vulnerability impacts multiple downstream vendors, an industry-wide protocol (e.g. TLS, BGP), a widely used open-source library (e.g. OpenSSL, Log4j), or common silicon hardware architecture (e.g. Spectre, Meltdown)[^first-cvd-guide].
 
 # Coordination Architecture
 
@@ -66,4 +66,4 @@ x-cvd:
 - [Embargo Management and Coordination](embargo-management.md)
 - [Advisory Publication and Patch Release](advisory-publication.md)
 
-[^first-cvd-guide]: Forum of Incident Response and Security Teams (FIRST), Guidelines for Coordinated Vulnerability Disclosure (FIRST CVD v1.1), https://www.first.org/global/sigs/vulnerability-coordination/multiparty/cvd-v1.1
+[^first-cvd-guide]: Forum of Incident Response and Security Teams (FIRST), Guidelines for Coordinated Vulnerability Disclosure (FIRST CVD v1.1), https://www.first.org/global/sigs/vulnerability-coordination/multiparty/guidelines-v1.1

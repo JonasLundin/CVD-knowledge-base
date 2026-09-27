@@ -2,7 +2,7 @@
 type: Role
 title: 'Role: Finder (Security Researcher)'
 description: Individual, academic, or organization discovering a vulnerability and
-  reporting it to the vendor or coordinator in good faith.
+  reporting it to the vendor or coordinator in good faith[^first-cvd-guide].
 category: role
 tags:
 - cvd
@@ -17,7 +17,7 @@ generated:
 stale_after: '2027-12-31T00:00:00Z'
 sources:
 - id: first-cvd-guide
-  resource: https://www.first.org/global/sigs/vulnerability-coordination/multiparty/cvd-v1.1
+  resource: https://www.first.org/global/sigs/vulnerability-coordination/multiparty/guidelines-v1.1
   title: Guidelines for Coordinated Vulnerability Disclosure (FIRST CVD v1.1)
   author: Forum of Incident Response and Security Teams (FIRST)
   last_modified: '2020-09-01T00:00:00Z'
@@ -31,7 +31,7 @@ x-cvd:
 
 # Summary
 
-A **Finder** (or security researcher / reporter) is an individual, research group, academic institution, or commercial entity that identifies an exploitable vulnerability in an ICT product or service and seeks to report it to the affected vendor, open-source steward, or national CSIRT in good faith.
+A **Finder** (or security researcher / reporter) is an individual, research group, academic institution, or commercial entity that identifies an exploitable vulnerability in an ICT product or service and seeks to report it to the affected vendor, open-source steward, or national CSIRT in good faith[^first-cvd-guide].
 
 # Rights, Expectations & Safe Harbor
 
@@ -49,4 +49,4 @@ Finders operating within published CVD policies (e.g. under RFC 9116 or DISA saf
 - [Intake Channels and Security.txt](../process/intake-and-reporting.md)
 - [Legal Safe Harbor](../glossary/safe-harbor.md)
 
-[^first-cvd-guide]: Forum of Incident Response and Security Teams (FIRST), Guidelines for Coordinated Vulnerability Disclosure (FIRST CVD v1.1), https://www.first.org/global/sigs/vulnerability-coordination/multiparty/cvd-v1.1
+[^first-cvd-guide]: Forum of Incident Response and Security Teams (FIRST), Guidelines for Coordinated Vulnerability Disclosure (FIRST CVD v1.1), https://www.first.org/global/sigs/vulnerability-coordination/multiparty/guidelines-v1.1

@@ -29,19 +29,16 @@ x-cvd:
 
 # Summary
 
-**Section 3 (CNA Administration)** defines the administrative parameters governing CNAs, focusing on scope definitions and operational obligations[^cve-operational-rules-4-2-0].
+**Section 3 (CNA Administration)** defines administrative obligations, operational onboarding, contact requirements, and scope governance for participating CNAs[^cve-operational-rules-4-2-0].
 
-# Key Provisions
+> [!NOTE]
+> **Legal Nature**: Section 3 establishes binding administrative requirements upon CNAs by contract, distinct from national or regional law.
 
-## §3.1 Scope Determination and Boundaries
-Each CNA is assigned a strictly defined scope upon onboarding (§3.1.1). Scope may be defined by:
-- Vendor products (vendor CNA).
-- Open-source projects (project CNA).
-- Vulnerability research or third-party bug bounty programs (researcher/coordinator CNA).
-- National or regional administrative boundaries (national CSIRT CNA).
+# Authentic Administrative Provisions
 
-## §3.2 Administrative Responsibilities
-CNAs must maintain active contact information with their designated Root (§3.2.1), designate operational points of contact, and respond to coordination requests within specified administrative timeframes (§3.2.4).
+- **Multiple Program Roles (§3.1.12.1)**: Organizations that operate in multiple capacities within the CVE Program (e.g., serving as both a vendor CNA and a Root or CNA of Last Resort) must establish, document, and maintain distinct, non-overlapping scope definitions for each separate role in the official List of Partners.
+- **Administrative Contacts and Points of Contact (§3.2.2)**: Participating CNAs must continuously maintain verified administrative and operational points of contact with their designated Root and the Secretariat to ensure reliable escalation and vulnerability notification.
+- **Assignment Notifications and Communication (§3.2.6.1)**: CNAs must provide structured, timely notifications regarding assignment activities, coordinating transparently when vulnerabilities intersect multiple stakeholder boundaries.
 
 # Related concepts
 - [CNA Operational Rules Index](index.md)

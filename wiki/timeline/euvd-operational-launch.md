@@ -12,8 +12,13 @@ status: draft
 generated:
   by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2027-06-30T00:00:00Z'
 sources:
+- id: eu-nis2-directive
+  resource: http://data.europa.eu/eli/dir/2022/2555/oj
+  title: Directive (EU) 2022/2555 on measures for a high common level of cybersecurity across the Union (NIS2)
+  author: European Parliament and Council of the European Union
+  last_modified: '2022-12-14T00:00:00Z'
 - id: enisa-euvd
   resource: https://euvd.enisa.europa.eu
   title: European Vulnerability Database Portal
@@ -28,14 +33,15 @@ x-cvd:
 
 # Summary
 
-On **May 13, 2025**, the European Union Agency for Cybersecurity (ENISA) formally unveiled the operational launch of the **European Vulnerability Database (EUVD)** pursuant to NIS2 Article 12(2)[^enisa-euvd].
+**13 May 2025**: ENISA officially launches the operational platform of the **European Vulnerability Database (EUVD)**[^eu-nis2-directive], fulfilling the statutory mandate set out in NIS2 Article 12(2).
 
-# Key Features
-- Established the EU central repository for known ICT vulnerabilities.
-- Integrated automated CSAF and VEX feed delivery for Member State CSIRTs.
+# Operational Capabilities and Public Value
+
+Developed by ENISA in close cooperation with the CSIRTs Network and national authorities, the EUVD provides a centralized, non-commercial public repository of known cybersecurity vulnerabilities in ICT products and services. The platform offers authenticated machine-readable data feeds (supporting CSAF 2.0 and CVE JSON), integrates vendor advisories, and provides European organizations with an authoritative reference for assessing software supply chain vulnerabilities.
 
 # Related concepts
-- [European Vulnerability Database](../programmes/euvd.md)
+- [Timeline Index](index.md)
+- [EUVD Programme Overview](../programmes/euvd.md)
 - [NIS2 Article 12](../law/eu/nis2-article-12.md)
 
-[^enisa-euvd]: European Union Agency for Cybersecurity (ENISA), European Vulnerability Database Portal, https://euvd.enisa.europa.eu
+[^eu-nis2-directive]: European Parliament and Council of the European Union, Directive (EU) 2022/2555 on measures for a high common level of cybersecurity across the Union (NIS2), http://data.europa.eu/eli/dir/2022/2555/oj

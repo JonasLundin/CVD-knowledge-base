@@ -27,14 +27,15 @@ x-cvd:
 
 # Summary
 
-**Common Platform Enumeration (CPE)** is a standardized method of naming classes of applications, operating systems, and hardware devices, widely utilized in CVE Record affected fields[^cve-schema-5-2-0].
+**Common Platform Enumeration (CPE)** is a standardized structured naming scheme managed by NIST for identifying classes of operating systems, hardware devices, and software applications within vulnerability disclosures[^cve-schema-5-2-0].
 
-# Syntax Structure (CPE 2.3 Formatted String)
-`cpe:2.3:[part]:[vendor]:[product]:[version]:[update]:[edition]:[language]:[sw_edition]:[target_sw]:[target_hw]:[other]`
-- `part`: `a` (application), `o` (operating system), or `h` (hardware).
+# Technical Mechanics and Schema Integration
+
+CPE represents product configurations through Uniform Resource Identifiers (CPE 2.2) or formatted string bindings (CPE 2.3), utilizing the `cpe:2.3:[part]:[vendor]:[product]:[version]:...` syntax. In vulnerability disclosure workflows and CVE records, CPE identifiers provide machine-readable asset matching, enabling automated scanners to cross-reference installed system software against known exploited vulnerability catalogs (such as CISA KEV) and automated advisory alerts.
 
 # Related concepts
-- [Package URL (purl)](purl.md)
-- [CVE ID Syntax](cve-id-syntax.md)
+- [Identifiers Index](index.md)
+- [Package URL](purl.md)
+- [CVE Record Format](../../programmes/cve/record-format/index.md)
 
 [^cve-schema-5-2-0]: CVE Project, CVE JSON Record Schema, Specification Version 5.2.0, https://cveproject.github.io/cve-schema

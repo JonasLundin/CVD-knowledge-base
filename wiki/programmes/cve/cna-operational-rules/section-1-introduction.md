@@ -31,16 +31,12 @@ x-cvd:
 
 **Section 1 (Introduction)** of the CNA Operational Rules (Version 4.2.0)[^cve-operational-rules-4-2-0] defines the mission, governance framework, and organizational structure of the CVE Program.
 
-# Key Provisions
+> [!NOTE]
+> **Legal Nature**: Compliance with Section 1 is a mandatory contractual condition for all authorized CNAs; these operational rules do not have statutory legal force.
 
-## §1.1 Purpose and Scope
-The CVE Program identifies, defines, and catalogs publicly disclosed cybersecurity vulnerabilities. The purpose of these Operational Rules is to govern the behavior, rights, and responsibilities of CVE Numbering Authorities (CNAs).
+# Foundational Structure and Governance
 
-## §1.2 Binding Nature of Rules
-Compliance with these Operational Rules is a mandatory condition of CNA participation. Rules are binding on all appointed CNAs, Roots, and Top-Level Roots, but do not constitute legislative statutory law.
-
-## §1.3 Organizational Hierarchy
-The program operates under the strategic direction of the CVE Board, administered by the Secretariat, organized through Top-Level Roots and Roots, and executed by operational CNAs.
+The CVE Program identifies, defines, and catalogs publicly disclosed cybersecurity vulnerabilities across international computing infrastructure. The Operational Rules govern the rights, obligations, and operational boundaries of CVE Numbering Authorities (CNAs), Roots, Top-Level Roots, and the Secretariat. Participation in the program is voluntary, but adherence to these operational rules is strictly mandatory for all authorized entities.
 
 # Related concepts
 - [CNA Operational Rules Index](index.md)

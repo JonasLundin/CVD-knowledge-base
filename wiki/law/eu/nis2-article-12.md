@@ -14,7 +14,7 @@ status: draft
 generated:
   by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2028-12-31T00:00:00Z'
 sources:
 - id: eu-nis2-directive
   resource: http://data.europa.eu/eli/dir/2022/2555/oj
@@ -41,7 +41,7 @@ x-cvd:
 3. **Assistance in Remediation**: CSIRTs are empowered to assist finders and vendors in identifying contact points, coordinating remediation timelines, and facilitating technical verification.
 
 ## European Vulnerability Database (Article 12(2))
-1. **ENISA Governance**: The European Union Agency for Cybersecurity (ENISA) develops and maintains a European vulnerability database (EUVD) in consultation with the CSIRTs Network.
+1. **ENISA Governance**: The European Union Agency for Cybersecurity (ENISA) develops and maintains a European vulnerability database (EUVD) after consulting the Cooperation Group.
 2. **Scope of the EUVD**: The database catalogs publicly known vulnerabilities in ICT products and services, associated risks, and vendor remediation advisories.
 3. **Machine-Readable Feeds**: The database provides structured, machine-readable vulnerability data feeds (supporting formats such as CSAF and CVE JSON) to public and private stakeholders.
 

@@ -29,24 +29,17 @@ x-cvd:
 
 # Summary
 
-**Section 4 (CNA Operational Rules)** governs the day-to-day assignment, reservation, coordination, and publication of CVE Records[^cve-operational-rules-4-2-0].
+**Section 4 (CNA Operational Rules)** governs the core operational mechanics of CVE assignment, multi-party coordination, and public disclosure requirements[^cve-operational-rules-4-2-0].
 
-# Key Provisions
+> [!NOTE]
+> **Legal Nature**: Operational mandates under Section 4 contractually govern participating CNAs without constituting statutory obligations.
 
-## §4.2 Assignment Rules
-1. **Assignment Criteria (§4.2.1)**: A CVE ID must only be assigned to a vulnerability that meets the CVE Definition of a vulnerability and violates an explicit security policy.
-2. **Scope Adherence (§4.2.2)**: A CNA must only assign CVE IDs to products or services within its approved operational scope.
-3. **CNA-LR Escalation (§4.2.4)**: If a product is not covered by any scoped CNA, the assignment request is handled by the appropriate CNA of Last Resort (CNA-LR).
+# Operational Requirements and Publication Mandates
 
-## §4.4 Communication and Coordination
-CNAs must communicate in good faith with finders, vendors, and coordinators. Coordination must not be used to unreasonably delay disclosure.
-
-## §4.5 Publishing Clocks
-1. **Target Publication Clock (§4.5.1.3)**: Once a vulnerability is publicly disclosed, the assigning CNA **SHOULD** publish the associated CVE Record within **24 hours**.
-2. **Mandatory Maximum Clock (§4.5.1.4)**: Under no circumstances may a CNA fail to publish a public vulnerability's CVE Record beyond **72 hours** of public disclosure. Failure to publish within 72 hours triggers Root intervention.
-
-## §4.6 Dispute Resolution and Appeals
-Disputes between finders and CNAs, or between two CNAs regarding assignment or scope, are escalated to the supervising Root (§4.6.1), with final appeal to the CVE Board Quality Working Group (QWG).
+- **Assignment Boundaries**: A CNA may assign CVE IDs exclusively to vulnerabilities falling within its documented, approved scope, verifying that the issue meets the CVE Definition of a vulnerability.
+- **Publishing Vulnerability Information (§4.5.2)**: Supplier and participating CNAs must ensure that public vulnerability advisories and security bulletins are accurately disseminated and aligned with the corresponding CVE Records submitted to the CVE registry.
+- **Publication Clocks**: Under Section 4.5, once a vulnerability is disclosed publicly, the assigning CNA is obligated to populate and publish the CVE Record without undue delay (target within 24 hours, mandatory maximum threshold triggering Root intervention).
+- **Dispute Escalation**: Inter-CNA disagreements over scope collisions or assignment validity escalate through the supervising Root to the CVE Board Quality Working Group (QWG).
 
 # Related concepts
 - [CNA Operational Rules Index](index.md)

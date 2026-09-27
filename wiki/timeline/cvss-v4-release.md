@@ -11,7 +11,7 @@ status: draft
 generated:
   by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2027-06-30T00:00:00Z'
 sources:
 - id: first-cvss-v4-0
   resource: https://www.first.org/cvss/v4.0

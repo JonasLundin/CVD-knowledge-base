@@ -28,14 +28,15 @@ x-cvd:
 
 # Summary
 
-**Package URL (purl)** standardizes how software packages are identified across programming package managers (e.g., npm, maven, pypi, cargo, debian)[^cve-schema-5-2-0].
+**Package URL (purl)** is a standardized, ecosystem-agnostic URL specification used across software supply chain security and vulnerability databases to uniquely identify open-source and commercial software packages[^cve-schema-5-2-0].
 
-# Syntax Scheme
-`pkg:<type>/<namespace>/<name>@<version>?<qualifiers>#<subpath>`
-- Examples: `pkg:npm/%40angular/animation@12.3.1`, `pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1`.
+# Specification Syntax and Ecosystem Role
+
+A Package URL follows the canonical schema: `pkg:<type>/<namespace>/<name>@<version>?<qualifiers>#<subpath>`. By establishing consistent identifier syntax across package managers (e.g., npm, PyPI, Maven, Cargo, Debian), purl allows vulnerability coordination databases, CVE records, and VEX statements to unambiguously link security disclosures to affected components, eliminating naming ambiguities common in legacy text descriptions.
 
 # Related concepts
+- [Identifiers Index](index.md)
 - [Common Platform Enumeration (CPE)](cpe.md)
-- [SWID Tags](swid.md)
+- [Software Identification (SWID)](swid.md)
 
 [^cve-schema-5-2-0]: CVE Project, CVE JSON Record Schema, Specification Version 5.2.0, https://cveproject.github.io/cve-schema

@@ -17,7 +17,7 @@ generated:
 stale_after: '2027-12-31T00:00:00Z'
 sources:
 - id: first-cvd-guide
-  resource: https://www.first.org/global/sigs/vulnerability-coordination/multiparty/cvd-v1.1
+  resource: https://www.first.org/global/sigs/vulnerability-coordination/multiparty/guidelines-v1.1
   title: Guidelines for Coordinated Vulnerability Disclosure (FIRST CVD v1.1)
   author: Forum of Incident Response and Security Teams (FIRST)
   last_modified: '2020-09-01T00:00:00Z'
@@ -47,4 +47,4 @@ Coordinators intervene in vulnerability disclosure workflows under specific cond
 - [Multi-Party Vulnerability Coordination](../process/multi-party-coordination.md)
 - [NIS2 Article 11: Coordinated Vulnerability Disclosure](../law/eu/nis2-article-12.md)
 
-[^first-cvd-guide]: Forum of Incident Response and Security Teams (FIRST), Guidelines for Coordinated Vulnerability Disclosure (FIRST CVD v1.1), https://www.first.org/global/sigs/vulnerability-coordination/multiparty/cvd-v1.1
+[^first-cvd-guide]: Forum of Incident Response and Security Teams (FIRST), Guidelines for Coordinated Vulnerability Disclosure (FIRST CVD v1.1), https://www.first.org/global/sigs/vulnerability-coordination/multiparty/guidelines-v1.1

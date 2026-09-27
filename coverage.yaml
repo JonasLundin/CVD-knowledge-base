@@ -3,7 +3,7 @@ release: 0.1.0
 coverage_status: partial
 total_concepts: 110
 by_category:
-  format: 16
+  format: 17
   glossary: 4
   guidance: 4
   jurisdiction: 31
@@ -12,7 +12,7 @@ by_category:
   rule: 6
   programme: 4
   role: 14
-  metric: 10
+  metric: 9
   standard: 4
   timeline: 5
 by_type:

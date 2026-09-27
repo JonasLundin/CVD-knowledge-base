@@ -29,18 +29,14 @@ x-cvd:
 
 # Summary
 
-**Section 2 (Managing the CNA Operational Rules)** establishes formal mechanisms for updating, amending, and interpreting the Operational Rules[^cve-operational-rules-4-2-0].
+**Section 2 (Managing the CNA Operational Rules)** establishes formal processes for proposing, reviewing, approving, and transitioning updates to the CNA Operational Rules[^cve-operational-rules-4-2-0].
 
-# Key Provisions
+> [!NOTE]
+> **Legal Nature**: Governance mechanisms outlined in Section 2 bind participating CNAs contractually within the CVE Program rather than through legislative statutes.
 
-## §2.1 Rule Change Proposals
-Any member of the CVE community or CNA may propose rule amendments. Proposals are reviewed by the CNA Coordination Working Group (CNACWG) and submitted to the CVE Board.
+# Rule Management and Governance Processes
 
-## §2.2 Board Approval and Transition Periods
-Rule revisions require formal approval by the CVE Board (§2.2.1). Approved rules establish explicit effective dates (typically with a transition window) to allow CNAs to adjust automated ingestion and publishing pipelines (§2.2.3).
-
-## §2.3 Interpretations and Guidance
-The Secretariat and Root CNAs publish official clarifications and guidance documents assisting CNAs in complying with complex operational mandates without modifying primary text.
+Rule modifications originate from CVE working groups, participant CNAs, or community feedback. Proposed amendments are evaluated through the CNA Coordination Working Group (CNACWG) and submitted to the CVE Board for formal deliberation and ratification. Upon Board approval, new rule versions are published with designated transition windows, enabling participating organizations to update their automated vulnerability intake and publication infrastructure before mandates take effect.
 
 # Related concepts
 - [CNA Operational Rules Index](index.md)

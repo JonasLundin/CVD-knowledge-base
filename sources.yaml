@@ -68,8 +68,9 @@ sources:
     - process/advisory-publication
   first-cvd-guide:
     id: first-cvd-guide
-    resource: https://www.first.org/global/sigs/vulnerability-coordination/multiparty/cvd-v1.1
-    title: Guidelines for Coordinated Vulnerability Disclosure (FIRST CVD v1.1)
+    resource: https://www.first.org/global/sigs/vulnerability-coordination/multiparty/guidelines-v1.1
+    title: Guidelines and Practices for Multi-Party Vulnerability Coordination and
+      Disclosure (v1.1)
     author: Forum of Incident Response and Security Teams (FIRST)
     last_modified: '2020-09-01T00:00:00Z'
     used_by:
@@ -87,7 +88,7 @@ sources:
     - roles/vendor-psirt
   first-psirt-services-framework:
     id: first-psirt-services-framework
-    resource: https://www.first.org/standards/frameworks/psirt/
+    resource: https://www.first.org/standards/frameworks/psirts/
     title: FIRST PSIRT Services Framework v1.1
     author: Forum of Incident Response and Security Teams (FIRST)
     last_modified: '2021-03-01T00:00:00Z'
@@ -104,6 +105,7 @@ sources:
     used_by:
     - reference-data/cvss/cvss-v4-0
     - timeline/cvss-v4-release
+    - process/triage-and-validation
   first-cvss-v3-1:
     id: first-cvss-v3-1
     resource: https://www.first.org/cvss/v3.1
@@ -140,15 +142,6 @@ sources:
     id: cisa-kev
     resource: https://www.cisa.gov/known-exploited-vulnerabilities-catalog
     title: Known Exploited Vulnerabilities Catalog
-    author: Cybersecurity and Infrastructure Security Agency (CISA)
-    last_modified: '2026-06-10T00:00:00Z'
-    used_by:
-    - reference-data/kev/kev
-  cisa-bod-26-04:
-    id: cisa-bod-26-04
-    resource: https://www.cisa.gov/news-events/directives/binding-operational-directive-26-04
-    title: 'Binding Operational Directive 26-04: Advancing Federal Remediation of
-      Exploited Vulnerabilities'
     author: Cybersecurity and Infrastructure Security Agency (CISA)
     last_modified: '2026-06-10T00:00:00Z'
     used_by:
@@ -221,6 +214,7 @@ sources:
     - law/eu/nis2-article-12
     - programmes/euvd
     - roles/csirt
+    - timeline/euvd-operational-launch
   eu-cra-regulation:
     id: eu-cra-regulation
     resource: http://data.europa.eu/eli/reg/2024/2847/oj
@@ -292,3 +286,12 @@ sources:
     last_modified: '2016-10-09T00:00:00Z'
     used_by:
     - law/national/french-anssi-cvd-regime
+  cisa-bod-22-01:
+    id: cisa-bod-22-01
+    resource: https://www.cisa.gov/news-events/directives/bod-22-01-reducing-significant-risk-known-exploited-vulnerabilities
+    title: 'Binding Operational Directive 22-01: Reducing the Significant Risk of
+      Known Exploited Vulnerabilities'
+    author: Cybersecurity and Infrastructure Security Agency (CISA)
+    last_modified: '2021-11-03T00:00:00Z'
+    used_by:
+    - reference-data/kev/kev

@@ -13,7 +13,7 @@ status: draft
 generated:
   by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2028-12-31T00:00:00Z'
 sources:
 - id: fr-code-defense-l2321-4
   resource: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033219460

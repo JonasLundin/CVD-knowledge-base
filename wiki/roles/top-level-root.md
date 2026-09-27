@@ -27,15 +27,15 @@ x-cvd:
 
 # Summary
 
-**Top-Level Roots** are governing bodies delegated by the CVE Board to supervise major global operational divisions (e.g., MITRE and CISA)[^cve-operational-rules-4-2-0].
+A **Top-Level Root (TL-Root)** is an institutional entity authorized by the CVE Board to exercise overarching operational and administrative authority across major geographic regions or critical sectors within the CVE Program[^cve-operational-rules-4-2-0].
 
-# Responsibilities
-- Setting operational guidelines for Roots.
-- Managing root-level dispute resolutions.
-- Coordinating directly with the CVE Secretariat.
+# Regional Leadership and Federation
+
+Top-Level Roots oversee multiple child Roots and CNAs, ensuring consistent enforcement of CVE Operational Rules and schema standards across extensive jurisdictions. For instance, **CISA** operates as a Top-Level Root for civilian US government and critical infrastructure sectors, while **ENISA** serves as a Top-Level Root for European Union Member States, aligning European vulnerability disclosures with the NIS2 European Vulnerability Database (EUVD).
 
 # Related concepts
-- [CVE Root](root.md)
-- [Secretariat](secretariat.md)
+- [Roles Index](index.md)
+- [Root Role](root.md)
+- [CVE Secretariat](secretariat.md)
 
 [^cve-operational-rules-4-2-0]: CVE Program, CVE Numbering Authority (CNA) Operational Rules, Version 4.2.0, https://www.cve.org/Resources/Roles/Cnas/CNA_Rules_v4.2.0.pdf

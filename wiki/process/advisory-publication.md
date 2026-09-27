@@ -17,7 +17,7 @@ generated:
 stale_after: '2027-12-31T00:00:00Z'
 sources:
 - id: first-cvd-guide
-  resource: https://www.first.org/global/sigs/vulnerability-coordination/multiparty/cvd-v1.1
+  resource: https://www.first.org/global/sigs/vulnerability-coordination/multiparty/guidelines-v1.1
   title: Guidelines for Coordinated Vulnerability Disclosure (FIRST CVD v1.1)
   author: Forum of Incident Response and Security Teams (FIRST)
   last_modified: '2020-09-01T00:00:00Z'
@@ -50,5 +50,5 @@ x-cvd:
 - [Section 4: CVE Record Requirements and Publishing](../programmes/cve/cna-operational-rules/section-4-cna-operational-rules.md)
 - [cnaContainer (CNA Content)](../programmes/cve/record-format/cna-container.md)
 
-[^first-cvd-guide]: Forum of Incident Response and Security Teams (FIRST), Guidelines for Coordinated Vulnerability Disclosure (FIRST CVD v1.1), https://www.first.org/global/sigs/vulnerability-coordination/multiparty/cvd-v1.1
+[^first-cvd-guide]: Forum of Incident Response and Security Teams (FIRST), Guidelines for Coordinated Vulnerability Disclosure (FIRST CVD v1.1), https://www.first.org/global/sigs/vulnerability-coordination/multiparty/guidelines-v1.1
 [^oasis-csaf-2-0]: OASIS Open, Common Security Advisory Framework Version 2.0 (CSAF v2.0), https://docs.oasis-open.org/csaf/csaf/v2.0/os/csaf-v2.0-os.html

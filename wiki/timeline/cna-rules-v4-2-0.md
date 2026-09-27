@@ -12,7 +12,7 @@ status: draft
 generated:
   by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2027-06-30T00:00:00Z'
 sources:
 - id: cve-operational-rules-4-2-0
   resource: https://www.cve.org/Resources/Roles/Cnas/CNA_Rules_v4.2.0.pdf
@@ -28,14 +28,15 @@ x-cvd:
 
 # Summary
 
-On **August 20, 2026**, the CVE Board approved **Version 4.2.0** of the CNA Operational Rules, taking effect on **August 25, 2026**[^cve-operational-rules-4-2-0].
+**25 August 2026**: The CVE Program officially ratifies and enters into force **CNA Operational Rules Version 4.2.0**[^cve-operational-rules-4-2-0], introducing refined publication clocks and structural governance rules.
 
-# Changes Introduced
-- Strict publication deadlines (§4.5.1.3 SHOULD 24h, §4.5.1.4 MUST 72h).
-- Clarified Root dispute workflows and updated schema alignment.
+# Strategic Evolution of Rules
+
+Version 4.2.0 refined Section 4 operational mandates, establishing explicit publication deadlines following public disclosure (target within 24 hours, mandatory maximum threshold triggering Root intervention). It further formalized administrative expectations under Section 3 (including multiple role scopes under §3.1.12.1 and administrative contact management under §3.2.2) and aligned CVE Record content requirements with CVE JSON Schema 5.2.0.
 
 # Related concepts
-- [CNA Operational Rules](../formats/vex/index.md)
 - [Timeline Index](index.md)
+- [CNA Rules Section 4](../programmes/cve/cna-operational-rules/section-4-cna-operational-rules.md)
+- [CNA Rules Section 6 Revision History](../programmes/cve/cna-operational-rules/section-6-revision-history.md)
 
 [^cve-operational-rules-4-2-0]: CVE Program, CVE Numbering Authority (CNA) Operational Rules, Version 4.2.0, https://www.cve.org/Resources/Roles/Cnas/CNA_Rules_v4.2.0.pdf

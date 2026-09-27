@@ -19,9 +19,9 @@ sources:
   title: Known Exploited Vulnerabilities Catalog
   author: Cybersecurity and Infrastructure Security Agency (CISA)
   last_modified: '2026-06-10T00:00:00Z'
-- id: cisa-bod-26-04
-  resource: https://www.cisa.gov/news-events/directives/binding-operational-directive-26-04
-  title: 'Binding Operational Directive 26-04: Advancing Federal Remediation of Exploited Vulnerabilities'
+- id: cisa-bod-22-01
+  resource: https://www.cisa.gov/news-events/directives/bod-22-01-reducing-significant-risk-known-exploited-vulnerabilities
+  title: 'Binding Operational Directive 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities'
   author: Cybersecurity and Infrastructure Security Agency (CISA)
   last_modified: '2026-06-10T00:00:00Z'
 x-cvd:
@@ -33,7 +33,7 @@ x-cvd:
 
 # Summary
 
-The **CISA Known Exploited Vulnerabilities (KEV) Catalog** is an authoritative inventory of security flaws actively targeted and exploited by threat actors in the wild[^cisa-kev][^cisa-bod-26-04].
+The **CISA Known Exploited Vulnerabilities (KEV) Catalog** is an authoritative inventory of security flaws actively targeted and exploited by threat actors in the wild[^cisa-kev][^cisa-bod-22-01].
 
 # Statutory Authority and Ingestion Criteria
 
@@ -52,4 +52,4 @@ To be cataloged in KEV, an issue must meet three mandatory criteria:
 - [SSVC](../ssvc/ssvc.md)
 
 [^cisa-kev]: Cybersecurity and Infrastructure Security Agency (CISA), Known Exploited Vulnerabilities Catalog, https://www.cisa.gov/known-exploited-vulnerabilities-catalog
-[^cisa-bod-26-04]: Cybersecurity and Infrastructure Security Agency (CISA), Binding Operational Directive 26-04: Advancing Federal Remediation of Exploited Vulnerabilities, https://www.cisa.gov/news-events/directives/binding-operational-directive-26-04
+[^cisa-bod-22-01]: Cybersecurity and Infrastructure Security Agency (CISA), Binding Operational Directive 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities, https://www.cisa.gov/news-events/directives/bod-22-01-reducing-significant-risk-known-exploited-vulnerabilities

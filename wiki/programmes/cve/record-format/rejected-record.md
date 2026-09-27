@@ -1,7 +1,7 @@
 ---
 type: Format
 title: rejectedContainer (Rejected Records)
-description: Structural container and validation schema populated in CVE JSON 5.0
+description: Structural container and validation schema populated in CVE JSON 5.2.0
   when a CVE ID is revoked or rejected, documenting formal rejection reasons and superseded-by
   links.
 category: format
@@ -26,7 +26,7 @@ x-cvd:
   jurisdiction: International
   authority_level: standard
   instrument_status: in_force
-  provision: CVE JSON Schema v5.0
+  provision: CVE JSON Schema v5.2.0
   checked_at: '2026-09-27T00:00:00Z'
 ---
 
@@ -58,7 +58,7 @@ containers
 
 # Common Rejection Scenarios
 
-Under Section 6 of the CNA Operational Rules, records are transitioned to `REJECTED` under well-defined procedural scenarios:
+Under §4.5.3 (Rejecting a CVE Record) of the CNA Operational Rules v4.2.0, records are transitioned to `REJECTED` under well-defined procedural scenarios:
 
 ### 1. Duplicate Assignment (Cross-CNA or Intra-CNA Collision)
 Two CNAs independently assign separate CVE IDs to the same underlying vulnerability (e.g., an upstream open-source flaw assigned by both a coordinator CNA and an OS distribution CNA). The later or downstream identifier is rejected, and `replacedBy` points to the primary upstream identifier[^cve-schema-5-2-0].
@@ -74,12 +74,12 @@ A CNA mistakenly assigned a CVE ID to third-party commercial software outside it
 
 # Complete JSON 5.0 Rejected Record Example
 
-Below is a complete, production-grade CVE JSON 5.0 document demonstrating a duplicate assignment rejection:
+Below is a complete, production-grade CVE JSON 5.2.0 document demonstrating a duplicate assignment rejection:
 
 ```json
 {
   "dataType": "CVE_RECORD",
-  "dataVersion": "5.0",
+  "dataVersion": "5.2.0",
   "cveMetadata": {
     "cveId": "CVE-2026-11892",
     "assignerOrgId": "82542658-c272-4020-bc12-72d8d615f760",
@@ -121,7 +121,7 @@ Vulnerability scanning platforms and dependency management tools must implement 
 
 # Dates and Transitions
 
-- **CNA Rules Version 4.2.0 (March 2024)**: Standardized the machine-readable `rejectedReasons` array and `replacedBy` pointers in CVE JSON 5.0, phasing out the legacy unstructured text prefixes (such as `"** REJECT **"`).
+- **CVE JSON Schema Specification Version 5.2.0 (October 2025)**: Standardized the machine-readable `rejectedReasons` array and `replacedBy` pointers in CVE JSON 5.2.0, phasing out the legacy unstructured text prefixes (such as `"** REJECT **"`).
 
 # Related concepts
 
@@ -131,7 +131,7 @@ Vulnerability scanning platforms and dependency management tools must implement 
 - [ADP Container](adp-container.md)
 - [Section 6: Dispute Resolution](../cna-operational-rules/section-4-cna-operational-rules.md)
 - [Section 3: Assignment Rules](../cna-operational-rules/section-4-cna-operational-rules.md)
-- [Secretariat Role](../../../roles/secretariat.md)
-- [CNA Role](../../../roles/cna.md)
+- [Secretariat Role](/roles/secretariat.md)
+- [CNA Role](/roles/cna.md)
 
 [^cve-schema-5-2-0]: CVE Project, CVE JSON Record Schema, Specification Version 5.2.0, https://cveproject.github.io/cve-schema

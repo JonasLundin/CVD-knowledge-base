@@ -13,7 +13,7 @@ status: draft
 generated:
   by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2027-06-30T00:00:00Z'
 sources:
 - id: eu-nis2-directive
   resource: http://data.europa.eu/eli/dir/2022/2555/oj
@@ -31,10 +31,10 @@ x-cvd:
 
 # Summary
 
-In Germany, the **Federal Office for Information Security (BSI)** and **CERT-Bund** coordinate vulnerability disclosures under § 8b of the BSI-Gesetz[^eu-nis2-directive].
+In Germany, the **Federal Office for Information Security (BSI)** and **CERT-Bund** coordinate vulnerability disclosures under § 5(1) of the BSI-Gesetz (BSIG)[^eu-nis2-directive].
 
 # National CVD Framework
-- **Designated Coordinator**: CERT-Bund acts as the national coordinator for multi-party vulnerabilities and software affecting critical entities.
+- **Designated Coordinator**: Under § 5(1) BSIG, BSI acts as the central reporting and coordination body, operating CERT-Bund as the national CSIRT coordinator for multi-party vulnerabilities and software affecting critical entities.
 - **CVD Policy**: BSI publishes a formal national CVD policy outlining structured 90-day embargo standards and public advisory mechanisms.
 - **Safe-Harbour Status**: Researchers must strictly adhere to non-intrusive testing to avoid § 202a StGB (Hackerparagraph) sanctions.
 

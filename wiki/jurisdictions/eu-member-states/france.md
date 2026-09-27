@@ -13,7 +13,7 @@ status: draft
 generated:
   by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2027-06-30T00:00:00Z'
 sources:
 - id: eu-nis2-directive
   resource: http://data.europa.eu/eli/dir/2022/2555/oj
@@ -35,7 +35,7 @@ France operates a statutory vulnerability disclosure regime led by **ANSSI** and
 
 # National CVD Framework
 - **Designated Coordinator**: CERT-FR within ANSSI.
-- **Statutory Protections**: Under Article L. 2321-4 du code de la défense, researchers who disclose vulnerabilities to ANSSI in good faith are protected from penal prosecution for automated processing system intrusion (Article 323-1 du code pénal).
+- **Statutory Scope & Legal Nuance**: Article L. 2321-4 du code de la défense allows individuals to report vulnerabilities to ANSSI while preserving confidentiality towards third parties. However, French law provides no blanket penal immunity; reporting to ANSSI does not automatically extinguish criminal liability under Article 323-1 du code pénal for unauthorized system access.
 - **Confidentiality**: ANSSI guarantees confidential handling of the researcher's identity towards the vendor during remediation.
 
 # Related concepts

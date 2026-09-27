@@ -15,7 +15,7 @@ generated:
 stale_after: '2027-12-31T00:00:00Z'
 sources:
 - id: first-psirt-services-framework
-  resource: https://www.first.org/standards/frameworks/psirt/
+  resource: https://www.first.org/standards/frameworks/psirts/
   title: FIRST PSIRT Services Framework v1.1
   author: Forum of Incident Response and Security Teams (FIRST)
   last_modified: '2021-03-01T00:00:00Z'
@@ -40,4 +40,4 @@ x-cvd:
 - [Advisory Lifecycle](advisory-lifecycle.md)
 - [FIRST PSIRT Services Framework](../standards/first-psirt-services-framework.md)
 
-[^first-psirt-services-framework]: Forum of Incident Response and Security Teams (FIRST), FIRST PSIRT Services Framework v1.1, https://www.first.org/standards/frameworks/psirt/
+[^first-psirt-services-framework]: Forum of Incident Response and Security Teams (FIRST), FIRST PSIRT Services Framework v1.1, https://www.first.org/standards/frameworks/psirts/

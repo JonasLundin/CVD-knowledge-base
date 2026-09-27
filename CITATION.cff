@@ -1,9 +1,12 @@
 cff-version: 1.2.0
-message: "If you use this knowledge base, please cite it using the metadata below."
-title: "Coordinated Vulnerability Disclosure (CVD) Knowledge Base"
+message: "If you use this knowledge bundle, cite the repository and the exact release tag."
+title: "Coordinated Vulnerability Disclosure Knowledge Base"
+type: dataset
+authors:
+  - family-names: "Lundin"
+    given-names: "Jonas"
+repository-code: "https://github.com/JonasLundin/CVD-knowledge-base"
+url: "https://github.com/JonasLundin/CVD-knowledge-base"
+license: CC-BY-4.0
 version: 0.1.0
 date-released: 2026-09-27
-authors:
-  - name: "Antigravitypair"
-license: CC-BY-4.0
-repository-code: "https://github.com/JonasLundin/CVD-knowledge-base"

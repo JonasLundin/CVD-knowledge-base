@@ -12,7 +12,7 @@ status: draft
 generated:
   by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2028-06-30T00:00:00Z'
 sources:
 - id: oasis-csaf-2-0
   resource: https://docs.oasis-open.org/csaf/csaf/v2.0/os/csaf-v2.0-os.html
@@ -28,15 +28,15 @@ x-cvd:
 
 # Summary
 
-**CSAF Aggregators** are automated intermediary services that regularly crawl known CSAF providers, verify digital signatures, and re-publish consolidated feeds for national or sector-wide consumption[^oasis-csaf-2-0].
+**CSAF Aggregators** are automated distribution components specified within the OASIS Common Security Advisory Framework (CSAF) Version 2.0 that collect, mirror, and index CSAF documents published across multiple independent security vendors[^oasis-csaf-2-0].
 
-# Key Operations
-- **Discovery**: Crawls `provider-metadata.json` lists.
-- **Integrity Validation**: Verifies OpenPGP signatures against declared keys.
-- **Mirroring**: Maintains high-availability mirrors for critical sector incident response teams.
+# Operational Architecture and Verification
+
+An aggregator discovers vendor security advisories by crawling `provider-metadata.json` endpoints across trusted domains. It verifies the cryptographic OpenPGP signatures of each retrieved document, validates structural compliance against normative JSON schemas, and compiles unified mirror indexes (such as `aggregator.json`). This centralized indexing enables downstream vulnerability scanners, national CSIRTs, and enterprise asset management systems to ingest all vendor advisories across Europe and international supply chains through standardized, authenticated interfaces without polling hundreds of individual vendor portals.
 
 # Related concepts
-- [CSAF Distribution](csaf-distribution.md)
-- [Provider Metadata](provider-metadata.md)
+- [CSAF Formats Index](index.md)
+- [CSAF Advisories](csaf-security-advisory.md)
+- [CSAF Trusted Providers](provider-metadata.md)
 
 [^oasis-csaf-2-0]: OASIS Open, Common Security Advisory Framework Version 2.0 (CSAF v2.0), https://docs.oasis-open.org/csaf/csaf/v2.0/os/csaf-v2.0-os.html

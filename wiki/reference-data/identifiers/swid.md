@@ -28,14 +28,15 @@ x-cvd:
 
 # Summary
 
-**Software Identification (SWID) Tags** (ISO/IEC 19770-2) provide authoritative, cryptographically signed metadata about installed software components[^cve-schema-5-2-0].
+**Software Identification (SWID) Tags** (standardized under ISO/IEC 19770-2) and their concise binary encoding **CoSWID** (RFC 9390) provide cryptographic XML and CBOR metadata files that record software identity, licensing, and installation state[^cve-schema-5-2-0].
 
-# Role in Vulnerability Management
-- **Asset Verification**: Ingested by automated asset scanners to identify installed software versions accurately.
-- **CVE Cross-Referencing**: Correlated with CVE JSON Schema affected objects and CSAF advisories.
+# Integration in Vulnerability Management
+
+In coordinated vulnerability disclosure and IT asset management, SWID tags deployed alongside commercial software allow automated vulnerability triage tools to discover installed software products reliably. In CVE Schema 5.2.0, SWID tags may be directly referenced within the `cna.affected.swid` structure, establishing cryptographic provenance between reported vulnerability advisories and managed operational environments.
 
 # Related concepts
+- [Identifiers Index](index.md)
 - [Common Platform Enumeration (CPE)](cpe.md)
-- [Package URL (purl)](purl.md)
+- [Package URL](purl.md)
 
 [^cve-schema-5-2-0]: CVE Project, CVE JSON Record Schema, Specification Version 5.2.0, https://cveproject.github.io/cve-schema

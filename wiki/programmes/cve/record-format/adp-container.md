@@ -41,6 +41,6 @@ The **ADP Container** (`containers.adp`) allows Authorized Data Publishers (such
 # Related concepts
 - [Record Format Index](index.md)
 - [CNA Container](cna-container.md)
-- [Authorized Data Publisher Role](../../../roles/authorized-data-publisher.md)
+- [Authorized Data Publisher Role](/roles/authorized-data-publisher.md)
 
 [^cve-schema-5-2-0]: CVE Project, CVE JSON Record Schema, Specification Version 5.2.0, https://cveproject.github.io/cve-schema

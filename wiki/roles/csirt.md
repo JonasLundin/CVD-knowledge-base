@@ -30,13 +30,13 @@ x-cvd:
 
 A **Computer Security Incident Response Team (CSIRT)** provides operational cybersecurity incident response and, when designated pursuant to NIS2 Article 12(1), acts as a neutral national coordinator for coordinated vulnerability disclosure[^eu-nis2-directive].
 
-# CVD Coordinator Responsibilities
-- Intermediary communication between finders and technology manufacturers.
-- Assisting in contacting unresponsive vendors.
-- Facilitating synchronized public disclosure schedules.
+# Operational Responsibilities in CVD
+
+Designated CSIRTs act as trusted intermediaries between vulnerability discoverers and technology vendors. Their duties include facilitating secure communication channels, verifying reported flaws, assisting in establishing reasonable remediation embargoes, coordinating multi-party dependencies across critical sectors, and facilitating national notification to the European vulnerability database managed by ENISA.
 
 # Related concepts
-- [NIS2 Article 12](../law/eu/nis2-article-12.md)
+- [Roles Index](index.md)
 - [Coordinator Role](coordinator.md)
+- [NIS2 Article 12](../law/eu/nis2-article-12.md)
 
 [^eu-nis2-directive]: European Parliament and Council of the European Union, Directive (EU) 2022/2555 on measures for a high common level of cybersecurity across the Union (NIS2), http://data.europa.eu/eli/dir/2022/2555/oj

@@ -27,15 +27,15 @@ x-cvd:
 
 # Summary
 
-A **CVE Root** is an organization authorized by the CVE Board and Top-Level Roots to manage a group of CNAs within a specific scope, industry, or region[^cve-operational-rules-4-2-0].
+A **Root** within the CVE Program is an organization authorized by the CVE Board and Secretariat to manage a specific family of CVE Numbering Authorities (CNAs) within a designated domain or sector[^cve-operational-rules-4-2-0].
 
-# Core Functions
-- Mentoring, recruiting, and approving new CNAs.
-- Distributing CVE ID blocks.
-- Adjudicating first-tier CNA assignment disputes.
+# Governance and Supervisory Functions
+
+Roots are responsible for recruiting, onboarding, and training candidate CNAs within their technical or industrial purview. They continuously monitor child CNA performance, verify adherence to mandatory publication clocks, resolve inter-CNA scope conflicts, and operate as a CNA of Last Resort (CNA-LR) for vulnerabilities within their domain when no child CNA is scoped. Prominent Roots include Siemens Root (industrial automation) and Red Hat Root (open-source software).
 
 # Related concepts
+- [Roles Index](index.md)
 - [Top-Level Root](top-level-root.md)
-- [ENISA Root](../programmes/cve/roots-and-cnas/enisa-root.md)
+- [CNA Role](cna.md)
 
 [^cve-operational-rules-4-2-0]: CVE Program, CVE Numbering Authority (CNA) Operational Rules, Version 4.2.0, https://www.cve.org/Resources/Roles/Cnas/CNA_Rules_v4.2.0.pdf
