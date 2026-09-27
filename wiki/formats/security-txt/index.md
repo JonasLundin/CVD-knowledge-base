@@ -2,4 +2,6 @@
 
 RFC 9116 fields, placement and lifecycle.
 
-No concepts yet. Pages added here follow the concept shape described in the repository's CONTRIBUTING.md.
+## Concepts
+
+- [RFC 9116 security.txt File Format](rfc-9116-security-txt.md) — Standardized text file hosted at /.well-known/security.txt defining vulnerability reporting contacts, encryption keys, and policy links.

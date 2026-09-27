@@ -2,4 +2,6 @@
 
 Vulnerability Exploitability eXchange: OpenVEX, CSAF VEX profile, CycloneDX VEX, status vocabulary, minimum requirements.
 
-No concepts yet. Pages added here follow the concept shape described in the repository's CONTRIBUTING.md.
+## Concepts
+
+- [CSAF 2.0 Vulnerability Exploitability eXchange (VEX)](csaf-vex-profile.md) — Profile 5 of CSAF 2.0 enabling vendors to state whether specific products are affected, not affected, or under investigation for a CVE.

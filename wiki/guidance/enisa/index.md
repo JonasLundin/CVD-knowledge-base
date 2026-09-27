@@ -2,4 +2,6 @@
 
 CVD good-practice reports and EUVD guidance.
 
-No concepts yet. Pages added here follow the concept shape described in the repository's CONTRIBUTING.md.
+## Concepts
+
+- [ENISA Good Practice Guide on Coordinated Vulnerability Disclosure](enisa-cvd-good-practices.md) — European guidelines assisting Member States and public/private entities in implementing national CVD ecosystems.

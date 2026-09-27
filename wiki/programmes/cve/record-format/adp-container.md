@@ -175,8 +175,8 @@ def resolve_cvss_score(cve_record):
 - [CNA Container](cna-container.md)
 - [Rejected Container](rejected-container.md)
 - [Authorized Data Publisher Role](../../../roles/authorized-data-publisher.md)
-- [CISA KEV Reference Data](../../../reference-data/kev.md)
-- [SSVC Reference Data](../../../reference-data/ssvc.md)
+- [CISA KEV Reference Data](../../../reference-data/kev/kev.md)
+- [SSVC Reference Data](../../../reference-data/ssvc/ssvc.md)
 - [EUVD Programme](../../euvd.md)
 
 [^cve-program]: CVE Program / The MITRE Corporation, CVE Numbering Authority (CNA) Operational Rules Version 4.0, https://www.cve.org/ResourcesSupport/AllResources/CNARules

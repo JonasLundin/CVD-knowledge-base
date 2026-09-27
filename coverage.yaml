@@ -3,19 +3,20 @@ release: 0.1.0
 baseline: '2026-09-27'
 coverage_status: complete
 review_status: unverified
-total_concepts: 75
+total_concepts: 86
 by_category:
-  format: 9
-  glossary: 4
-  jurisdiction: 30
-  law: 2
-  metric: 6
-  procedure: 5
-  programme: 2
   role: 6
-  rule: 6
-  standard: 2
+  glossary: 4
+  programme: 3
   timeline: 3
+  procedure: 5
+  standard: 2
+  metric: 7
+  format: 11
+  rule: 6
+  jurisdiction: 31
+  law: 3
+  guidance: 5
 by_type:
   Format: 9
   Glossary: 4

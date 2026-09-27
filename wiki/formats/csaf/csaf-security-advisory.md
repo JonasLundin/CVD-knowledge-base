@@ -185,8 +185,8 @@ CSAF Security Advisories streamline end-to-end vulnerability response:
 - [CSAF Security Incident Response](csaf-security-incident-response.md)
 - [Advisory Publication Process](../../process/advisory-publication.md)
 - [Vendor PSIRT Role](../../roles/vendor-psirt.md)
-- [CVSS v3.1 Reference Data](../../reference-data/cvss-v3-1.md)
-- [CVSS v4.0 Reference Data](../../reference-data/cvss-v4-0.md)
+- [CVSS v3.1 Reference Data](../../reference-data/cvss/cvss-v3-1.md)
+- [CVSS v4.0 Reference Data](../../reference-data/cvss/cvss-v4-0.md)
 
 [^oasis-csaf-2-0]: OASIS Common Security Advisory Framework TC, Common Security Advisory Framework (CSAF) Version 2.0, https://docs.oasis-open.org/csaf/csaf/v2.0/csaf-v2.0.html
 [^iso-iec-29147]: International Organization for Standardization (ISO) / IEC, ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure, https://www.iso.org/standard/72311.html

@@ -46,7 +46,7 @@ Under NIS2 Article 11:
 
 # Related concepts
 - [The CVE Program](cve-program.md)
-- [NIS2 Article 11: Coordinated Vulnerability Disclosure](../law/nis2-article-11.md)
+- [NIS2 Article 11: Coordinated Vulnerability Disclosure](../law/eu/nis2-article-11.md)
 - [CSAF 2.0 Security Advisory Profile](../formats/csaf/csaf-security-advisory.md)
 
 [^nis2-directive]: European Parliament and Council of the European Union, Directive (EU) 2022/2555 on measures for a high common level of cybersecurity across the Union (NIS2), http://data.europa.eu/eli/dir/2022/2555/oj

@@ -136,12 +136,12 @@ Organizations integrate EPSS through public REST APIs:
 # Related concepts
 
 - [Reference Data Index](index.md)
-- [CVSS v3.1 Specification](cvss-v3-1.md)
-- [CVSS v4.0 Specification](cvss-v4-0.md)
-- [Stakeholder-Specific Vulnerability Categorization (SSVC)](ssvc.md)
-- [CISA KEV Catalog](kev.md)
-- [Triage and Validation Process](../process/triage-and-validation.md)
-- [Vendor PSIRT Role](../roles/vendor-psirt.md)
+- [CVSS v3.1 Specification](../cvss/cvss-v3-1.md)
+- [CVSS v4.0 Specification](../cvss/cvss-v4-0.md)
+- [Stakeholder-Specific Vulnerability Categorization (SSVC)](../ssvc/ssvc.md)
+- [CISA KEV Catalog](../kev/kev.md)
+- [Triage and Validation Process](../../process/triage-and-validation.md)
+- [Vendor PSIRT Role](../../roles/vendor-psirt.md)
 
 [^first-cvss-v4]: Forum of Incident Response and Security Teams (FIRST), Common Vulnerability Scoring System (CVSS) Specification Document Version 4.0, https://www.first.org/cvss/v4-0/specification-document
 [^iso-iec-29147]: International Organization for Standardization (ISO) / IEC, ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure, https://www.iso.org/standard/72311.html

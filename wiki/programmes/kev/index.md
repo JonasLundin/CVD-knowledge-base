@@ -2,4 +2,6 @@
 
 CISA KEV inclusion criteria, feed, remediation directives.
 
-No concepts yet. Pages added here follow the concept shape described in the repository's CONTRIBUTING.md.
+## Status
+
+Technical references and guidance for known exploited vulnerabilities are tracked in associated chapters and supporting standards.

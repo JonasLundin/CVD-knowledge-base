@@ -65,8 +65,8 @@ x-cvd:
 # Related concepts
 - [Intake Channels and Security.txt](intake-and-reporting.md)
 - [Embargo Management and Coordination](embargo-management.md)
-- [Common Vulnerability Scoring System (CVSS) v4.0](../reference-data/cvss-v4-0.md)
-- [Common Weakness Enumeration (CWE)](../reference-data/cwe.md)
+- [Common Vulnerability Scoring System (CVSS) v4.0](../reference-data/cvss/cvss-v4-0.md)
+- [Common Weakness Enumeration (CWE)](../reference-data/cwe/cwe.md)
 
 [^iso-iec-30111]: International Organization for Standardization (ISO) / IEC, ISO/IEC 30111:2019 Information technology — Security techniques — Vulnerability handling processes, https://www.iso.org/standard/72312.html
 [^first-cvss-v4]: Forum of Incident Response and Security Teams (FIRST), Common Vulnerability Scoring System (CVSS) Specification Document Version 4.0, https://www.first.org/cvss/v4-0/specification-document

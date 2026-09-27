@@ -140,11 +140,11 @@ In Coordinated Vulnerability Disclosure (CVD) operations:
 
 - [Reference Data Index](index.md)
 - [CVSS v4.0 Specification](cvss-v4-0.md)
-- [Exploit Prediction Scoring System (EPSS)](epss.md)
-- [Stakeholder-Specific Vulnerability Categorization (SSVC)](ssvc.md)
-- [CWE Reference Data](cwe.md)
-- [CNA Container](../programmes/cve/record-format/cna-container.md)
-- [CSAF Security Advisory](../formats/csaf/csaf-security-advisory.md)
+- [Exploit Prediction Scoring System (EPSS)](../epss/epss.md)
+- [Stakeholder-Specific Vulnerability Categorization (SSVC)](../ssvc/ssvc.md)
+- [CWE Reference Data](../cwe/cwe.md)
+- [CNA Container](../../programmes/cve/record-format/cna-container.md)
+- [CSAF Security Advisory](../../formats/csaf/csaf-security-advisory.md)
 
 [^first-cvss-v4]: Forum of Incident Response and Security Teams (FIRST), Common Vulnerability Scoring System (CVSS) Specification Document Version 4.0, https://www.first.org/cvss/v4-0/specification-document
 [^iso-iec-29147]: International Organization for Standardization (ISO) / IEC, ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure, https://www.iso.org/standard/72311.html

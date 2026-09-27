@@ -2,4 +2,6 @@
 
 CVD process, KEV and VEX guidance.
 
-No concepts yet. Pages added here follow the concept shape described in the repository's CONTRIBUTING.md.
+## Concepts
+
+- [CISA Guidelines for Vulnerability Disclosure Programs](cisa-vulnerability-disclosure-guidelines.md) — CISA directive and templates for public and commercial organizations establishing vulnerability disclosure policies.

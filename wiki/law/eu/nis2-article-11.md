@@ -78,9 +78,9 @@ Article 11 removes the historical legal ambiguity surrounding security research 
    - Operates as a CVE Top-Level Root for European Union bodies and agencies.
 
 # Related concepts
-- [European Vulnerability Database (EUVD)](../programmes/euvd.md)
-- [Coordinator Role](../roles/coordinator.md)
-- [Multi-Party Vulnerability Coordination](../process/multi-party-coordination.md)
+- [European Vulnerability Database (EUVD)](../../programmes/euvd.md)
+- [Coordinator Role](../../roles/coordinator.md)
+- [Multi-Party Vulnerability Coordination](../../process/multi-party-coordination.md)
 - [CRA Vulnerability Handling Provisions](cra-vulnerability-handling.md)
 
 [^nis2-directive]: European Parliament and Council of the European Union, Directive (EU) 2022/2555 on measures for a high common level of cybersecurity across the Union (NIS2), http://data.europa.eu/eli/dir/2022/2555/oj

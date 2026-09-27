@@ -152,12 +152,12 @@ Security orchestration platforms execute SSVC logic using open-source Python pac
 # Related concepts
 
 - [Reference Data Index](index.md)
-- [CVSS v3.1 Specification](cvss-v3-1.md)
-- [CVSS v4.0 Specification](cvss-v4-0.md)
-- [Exploit Prediction Scoring System (EPSS)](epss.md)
-- [CISA KEV Catalog](kev.md)
-- [ADP Container](../programmes/cve/record-format/adp-container.md)
-- [Vendor PSIRT Role](../roles/vendor-psirt.md)
+- [CVSS v3.1 Specification](../cvss/cvss-v3-1.md)
+- [CVSS v4.0 Specification](../cvss/cvss-v4-0.md)
+- [Exploit Prediction Scoring System (EPSS)](../epss/epss.md)
+- [CISA KEV Catalog](../kev/kev.md)
+- [ADP Container](../../programmes/cve/record-format/adp-container.md)
+- [Vendor PSIRT Role](../../roles/vendor-psirt.md)
 
 [^first-cvss-v4]: Forum of Incident Response and Security Teams (FIRST), Common Vulnerability Scoring System (CVSS) Specification Document Version 4.0, https://www.first.org/cvss/v4-0/specification-document
 [^iso-iec-29147]: International Organization for Standardization (ISO) / IEC, ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure, https://www.iso.org/standard/72311.html

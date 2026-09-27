@@ -72,8 +72,8 @@ In every published CVE record, CNAs record the root weakness inside `containers.
 ```
 
 # Related concepts
-- [CNA Container](../programmes/cve/record-format/cna-container.md)
-- [Common Vulnerability Scoring System v4.0](cvss-v4-0.md)
-- [Triage, Reproduction, and Impact Assessment](../process/triage-and-validation.md)
+- [CNA Container](../../programmes/cve/record-format/cna-container.md)
+- [Common Vulnerability Scoring System v4.0](../cvss/cvss-v4-0.md)
+- [Triage, Reproduction, and Impact Assessment](../../process/triage-and-validation.md)
 
 [^cve-program]: CVE Program / The MITRE Corporation, CVE Numbering Authority (CNA) Operational Rules Version 4.0, https://www.cve.org/ResourcesSupport/AllResources/CNARules

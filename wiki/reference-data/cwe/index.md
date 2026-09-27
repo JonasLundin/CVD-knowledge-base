@@ -2,4 +2,6 @@
 
 Common Weakness Enumeration views and its use in CVE Records.
 
-No concepts yet. Pages added here follow the concept shape described in the repository's CONTRIBUTING.md.
+## Concepts
+
+- [Common Weakness Enumeration (CWE)](cwe.md) — Community-developed taxonomy of software and hardware weakness types underlying vulnerabilities.

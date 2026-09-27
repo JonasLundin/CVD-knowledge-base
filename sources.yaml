@@ -20,7 +20,7 @@ sources:
     - programmes/cve/record-format/cna-container
     - programmes/cve/record-format/cve-tag-container
     - programmes/cve/record-format/rejected-container
-    - reference-data/cwe
+    - reference-data/cwe/cwe
     - roles/authorized-data-publisher
     - roles/cna
     - roles/coordinator
@@ -118,11 +118,11 @@ sources:
     author: Forum of Incident Response and Security Teams (FIRST)
     last_modified: '2023-11-01T00:00:00Z'
     used_by:
-    - reference-data/cvss-v3-1
-    - reference-data/cvss-v4-0
-    - reference-data/epss
-    - reference-data/kev
-    - reference-data/ssvc
+    - reference-data/cvss/cvss-v3-1
+    - reference-data/cvss/cvss-v4-0
+    - reference-data/epss/epss
+    - reference-data/kev/kev
+    - reference-data/ssvc/ssvc
   nis2-directive:
     id: nis2-directive
     resource: http://data.europa.eu/eli/dir/2022/2555/oj
@@ -158,6 +158,6 @@ sources:
     - jurisdictions/eu-member-states/slovenia
     - jurisdictions/eu-member-states/spain
     - jurisdictions/eu-member-states/sweden
-    - law/cra-vulnerability-handling
-    - law/nis2-article-11
+    - law/eu/cra-vulnerability-handling
+    - law/eu/nis2-article-11
     - programmes/euvd

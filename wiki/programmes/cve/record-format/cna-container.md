@@ -208,8 +208,8 @@ Under Section 4 of the CNA Operational Rules:
 - [ADP Container](adp-container.md)
 - [Rejected Container](rejected-container.md)
 - [Section 4: Record Publishing](../cna-operational-rules/section-4-record-publishing.md)
-- [CWE Reference Data](../../../reference-data/cwe.md)
-- [CVSS v4.0 Reference Data](../../../reference-data/cvss-v4-0.md)
+- [CWE Reference Data](../../../reference-data/cwe/cwe.md)
+- [CVSS v4.0 Reference Data](../../../reference-data/cvss/cvss-v4-0.md)
 - [CNA Role](../../../roles/cna.md)
 - [Vendor PSIRT Role](../../../roles/vendor-psirt.md)
 

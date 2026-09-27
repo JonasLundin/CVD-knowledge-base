@@ -141,7 +141,7 @@ For a Product Security Incident Response Team (PSIRT) operating as a CNA:
 - [Section 5: Embargo Management](section-5-embargo-management.md)
 - [Section 6: Dispute Resolution](section-6-dispute-resolution.md)
 - [CNA Container](../record-format/cna-container.md)
-- [CWE Reference Data](../../../reference-data/cwe.md)
+- [CWE Reference Data](../../../reference-data/cwe/cwe.md)
 - [Triage and Validation Process](../../../process/triage-and-validation.md)
 - [Vendor PSIRT Role](../../../roles/vendor-psirt.md)
 - [Finder Role](../../../roles/finder.md)

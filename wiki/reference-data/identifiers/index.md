@@ -2,4 +2,6 @@
 
 CPE, package URL, SWID and other product identifiers used to name affected products.
 
-No concepts yet. Pages added here follow the concept shape described in the repository's CONTRIBUTING.md.
+## Concepts
+
+- [CVE ID Syntax and Allocation Rules](cve-id-syntax.md) — Specification of the CVE Identifier format: CVE prefix, four-digit year, and variable-length digit sequence number.

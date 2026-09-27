@@ -44,6 +44,6 @@ CISA serves as the premier Authorized Data Publisher, operating the *Vulnrichmen
 # Related concepts
 - [adpContainer (Authorized Data Publisher)](../programmes/cve/record-format/adp-container.md)
 - [The CVE Program](../programmes/cve-program.md)
-- [CISA Known Exploited Vulnerabilities (KEV) Catalog](../reference-data/kev.md)
+- [CISA Known Exploited Vulnerabilities (KEV) Catalog](../reference-data/kev/kev.md)
 
 [^cve-program]: CVE Program / The MITRE Corporation, CVE Numbering Authority (CNA) Operational Rules Version 4.0, https://www.cve.org/ResourcesSupport/AllResources/CNARules

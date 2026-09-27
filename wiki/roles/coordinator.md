@@ -52,7 +52,7 @@ Coordinators intervene in vulnerability disclosure workflows under specific cond
 - [Finder (Security Researcher)](finder.md)
 - [Vendor PSIRT](vendor-psirt.md)
 - [Multi-Party Vulnerability Coordination](../process/multi-party-coordination.md)
-- [NIS2 Article 11: Coordinated Vulnerability Disclosure](../law/nis2-article-11.md)
+- [NIS2 Article 11: Coordinated Vulnerability Disclosure](../law/eu/nis2-article-11.md)
 
 [^iso-iec-29147]: International Organization for Standardization (ISO) / IEC, ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure, https://www.iso.org/standard/72311.html
 [^nis2-directive]: European Parliament and Council of the European Union, Directive (EU) 2022/2555 on measures for a high common level of cybersecurity across the Union (NIS2), http://data.europa.eu/eli/dir/2022/2555/oj

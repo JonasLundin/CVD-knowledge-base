@@ -55,8 +55,8 @@ A vulnerability's presence in KEV automatically changes its decision state acros
 - In enterprise SOC/VM programs, KEV status triggers immediate emergency patching playbooks.
 
 # Related concepts
-- [Stakeholder-Specific Vulnerability Categorization (SSVC)](ssvc.md)
-- [Exploit Prediction Scoring System (EPSS)](epss.md)
-- [ADP Container](../programmes/cve/record-format/adp-container.md)
+- [Stakeholder-Specific Vulnerability Categorization (SSVC)](../ssvc/ssvc.md)
+- [Exploit Prediction Scoring System (EPSS)](../epss/epss.md)
+- [ADP Container](../../programmes/cve/record-format/adp-container.md)
 
 [^first-cvss-v4]: Forum of Incident Response and Security Teams (FIRST), Common Vulnerability Scoring System (CVSS) Specification Document Version 4.0, https://www.first.org/cvss/v4-0/specification-document
