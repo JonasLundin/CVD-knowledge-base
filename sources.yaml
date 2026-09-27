@@ -1,4 +1,163 @@
 version: 1
-checked_at: '2026-09-26T00:00:00Z'
-total_sources: 0
-sources: {}
+checked_at: '2026-09-27T00:00:00Z'
+total_sources: 6
+sources:
+  cve-program:
+    id: cve-program
+    resource: https://www.cve.org/ResourcesSupport/AllResources/CNARules
+    title: CVE Numbering Authority (CNA) Operational Rules Version 4.0
+    author: CVE Program / The MITRE Corporation
+    last_modified: '2024-03-01T00:00:00Z'
+    used_by:
+    - programmes/cve-program
+    - programmes/cve/cna-operational-rules/section-1-program-overview
+    - programmes/cve/cna-operational-rules/section-2-eligibility-and-onboarding
+    - programmes/cve/cna-operational-rules/section-3-id-assignment-rules
+    - programmes/cve/cna-operational-rules/section-4-record-publishing
+    - programmes/cve/cna-operational-rules/section-5-embargo-management
+    - programmes/cve/cna-operational-rules/section-6-dispute-resolution
+    - programmes/cve/record-format/adp-container
+    - programmes/cve/record-format/cna-container
+    - programmes/cve/record-format/cve-tag-container
+    - programmes/cve/record-format/rejected-container
+    - reference-data/cwe
+    - roles/authorized-data-publisher
+    - roles/cna
+    - roles/coordinator
+    - roles/finder
+    - roles/secretariat
+    - roles/vendor-psirt
+    - timeline/cve-v5-record-format
+    - timeline/cvss-v4-release
+    - timeline/euvd-operational-launch
+  oasis-csaf-2-0:
+    id: oasis-csaf-2-0
+    resource: https://docs.oasis-open.org/csaf/csaf/v2.0/csaf-v2.0.html
+    title: Common Security Advisory Framework (CSAF) Version 2.0
+    author: OASIS Common Security Advisory Framework TC
+    last_modified: '2022-11-09T00:00:00Z'
+    used_by:
+    - formats/csaf/csaf-base
+    - formats/csaf/csaf-informational-advisory
+    - formats/csaf/csaf-security-advisory
+    - formats/csaf/csaf-security-incident-response
+    - formats/csaf/csaf-vex
+  iso-iec-29147:
+    id: iso-iec-29147
+    resource: https://www.iso.org/standard/72311.html
+    title: "ISO/IEC 29147:2018 Information technology \u2014 Security techniques \u2014\
+      \ Vulnerability disclosure"
+    author: International Organization for Standardization (ISO) / IEC
+    last_modified: '2018-10-01T00:00:00Z'
+    used_by:
+    - glossary/coordinated-vulnerability-disclosure
+    - glossary/proof-of-concept
+    - glossary/safe-harbor
+    - glossary/zero-day
+    - jurisdictions/eea/iceland
+    - jurisdictions/eea/liechtenstein
+    - jurisdictions/eea/norway
+    - jurisdictions/eu-member-states/austria
+    - jurisdictions/eu-member-states/belgium
+    - jurisdictions/eu-member-states/bulgaria
+    - jurisdictions/eu-member-states/croatia
+    - jurisdictions/eu-member-states/cyprus
+    - jurisdictions/eu-member-states/czechia
+    - jurisdictions/eu-member-states/denmark
+    - jurisdictions/eu-member-states/estonia
+    - jurisdictions/eu-member-states/finland
+    - jurisdictions/eu-member-states/france
+    - jurisdictions/eu-member-states/germany
+    - jurisdictions/eu-member-states/greece
+    - jurisdictions/eu-member-states/hungary
+    - jurisdictions/eu-member-states/ireland
+    - jurisdictions/eu-member-states/italy
+    - jurisdictions/eu-member-states/latvia
+    - jurisdictions/eu-member-states/lithuania
+    - jurisdictions/eu-member-states/luxembourg
+    - jurisdictions/eu-member-states/malta
+    - jurisdictions/eu-member-states/netherlands
+    - jurisdictions/eu-member-states/poland
+    - jurisdictions/eu-member-states/portugal
+    - jurisdictions/eu-member-states/romania
+    - jurisdictions/eu-member-states/slovakia
+    - jurisdictions/eu-member-states/slovenia
+    - jurisdictions/eu-member-states/spain
+    - jurisdictions/eu-member-states/sweden
+    - process/advisory-publication
+    - process/embargo-management
+    - process/intake-and-reporting
+    - process/multi-party-coordination
+    - process/triage-and-validation
+    - roles/authorized-data-publisher
+    - roles/cna
+    - roles/coordinator
+    - roles/finder
+    - roles/secretariat
+    - roles/vendor-psirt
+    - standards/iso-iec-29147
+  iso-iec-30111:
+    id: iso-iec-30111
+    resource: https://www.iso.org/standard/72312.html
+    title: "ISO/IEC 30111:2019 Information technology \u2014 Security techniques \u2014\
+      \ Vulnerability handling processes"
+    author: International Organization for Standardization (ISO) / IEC
+    last_modified: '2019-10-01T00:00:00Z'
+    used_by:
+    - process/advisory-publication
+    - process/embargo-management
+    - process/intake-and-reporting
+    - process/multi-party-coordination
+    - process/triage-and-validation
+    - standards/iso-iec-30111
+  first-cvss-v4:
+    id: first-cvss-v4
+    resource: https://www.first.org/cvss/v4-0/specification-document
+    title: Common Vulnerability Scoring System (CVSS) Specification Document Version
+      4.0
+    author: Forum of Incident Response and Security Teams (FIRST)
+    last_modified: '2023-11-01T00:00:00Z'
+    used_by:
+    - reference-data/cvss-v3-1
+    - reference-data/cvss-v4-0
+    - reference-data/epss
+    - reference-data/kev
+    - reference-data/ssvc
+  nis2-directive:
+    id: nis2-directive
+    resource: http://data.europa.eu/eli/dir/2022/2555/oj
+    title: Directive (EU) 2022/2555 on measures for a high common level of cybersecurity
+      across the Union (NIS2)
+    author: European Parliament and Council of the European Union
+    last_modified: '2022-12-14T00:00:00Z'
+    used_by:
+    - jurisdictions/eu-member-states/austria
+    - jurisdictions/eu-member-states/belgium
+    - jurisdictions/eu-member-states/bulgaria
+    - jurisdictions/eu-member-states/croatia
+    - jurisdictions/eu-member-states/cyprus
+    - jurisdictions/eu-member-states/czechia
+    - jurisdictions/eu-member-states/denmark
+    - jurisdictions/eu-member-states/estonia
+    - jurisdictions/eu-member-states/finland
+    - jurisdictions/eu-member-states/france
+    - jurisdictions/eu-member-states/germany
+    - jurisdictions/eu-member-states/greece
+    - jurisdictions/eu-member-states/hungary
+    - jurisdictions/eu-member-states/ireland
+    - jurisdictions/eu-member-states/italy
+    - jurisdictions/eu-member-states/latvia
+    - jurisdictions/eu-member-states/lithuania
+    - jurisdictions/eu-member-states/luxembourg
+    - jurisdictions/eu-member-states/malta
+    - jurisdictions/eu-member-states/netherlands
+    - jurisdictions/eu-member-states/poland
+    - jurisdictions/eu-member-states/portugal
+    - jurisdictions/eu-member-states/romania
+    - jurisdictions/eu-member-states/slovakia
+    - jurisdictions/eu-member-states/slovenia
+    - jurisdictions/eu-member-states/spain
+    - jurisdictions/eu-member-states/sweden
+    - law/cra-vulnerability-handling
+    - law/nis2-article-11
+    - programmes/euvd
