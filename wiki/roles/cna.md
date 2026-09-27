@@ -1,6 +1,6 @@
 ---
 type: Role
-title: CVE Numbering Authority (CNA)
+title: 'Role: CVE Numbering Authority (CNA)'
 description: Organization authorized by the CVE Program to assign CVE IDs to vulnerabilities
   within their designated scope.
 category: role
@@ -8,9 +8,11 @@ tags:
 - cvd
 - role
 - cna
+- cve
+- mitre
 status: draft
 generated:
-  by: agent:antigravity
+  by: agent:kb-researcher-writer
   at: '2026-09-27T00:00:00Z'
 stale_after: '2027-12-31T00:00:00Z'
 sources:
@@ -19,31 +21,29 @@ sources:
   title: CVE Numbering Authority (CNA) Operational Rules Version 4.0
   author: CVE Program / The MITRE Corporation
   last_modified: '2024-03-01T00:00:00Z'
-- id: iso-iec-29147
-  resource: https://www.iso.org/standard/72311.html
-  title: "ISO/IEC 29147:2018 Information technology \u2014 Security techniques \u2014\
-    \ Vulnerability disclosure"
-  author: International Organization for Standardization (ISO) / IEC
-  last_modified: '2018-10-01T00:00:00Z'
 x-cvd:
   jurisdiction: International
   authority_level: rule
   instrument_status: in_force
-  provision: CNA Rules
+  provision: CVE CNA Operational Rules
   checked_at: '2026-09-27T00:00:00Z'
 ---
 
 # Summary
 
-**CVE Numbering Authority (CNA)** definition, duties, and operational interface in coordinated vulnerability disclosure[^cve-program][^iso-iec-29147].
+A **CVE Numbering Authority (CNA)** is an organization authorized by the CVE Program to assign CVE Identifiers to vulnerabilities affecting products within their agreed-upon organizational scope and to populate and publish official CVE Records[^cve-program].
 
-Organization authorized by the CVE Program to assign CVE IDs to vulnerabilities within their designated scope.
+# CNA Types & Scopes
 
-# Responsibilities
-Key procedural duties within the global vulnerability ecosystem.
+- **Vendor / Project CNAs**: Assign CVE IDs strictly for vulnerabilities in their own commercial products or open-source projects (e.g. Red Hat, Microsoft, Apache, Linux Foundation).
+- **Coordinator CNAs**: Assign CVE IDs for vulnerabilities reported to them involving third-party products (e.g. CERT/CC, JPCERT/CC).
+- **National / Regional CNAs**: Assign CVE IDs for products developed within a specific geographic territory.
+- **Root CNAs**: Supervise and onboard child CNAs within a specific technology domain or geopolitical region.
 
 # Related concepts
-- [Roles Index](index.md)
+- [The CVE Program](../programmes/cve-program.md)
+- [Section 1: CNA Program Overview](../programmes/cve/cna-operational-rules/section-1-program-overview.md)
+- [Section 3: CVE ID Assignment Rules](../programmes/cve/cna-operational-rules/section-3-id-assignment-rules.md)
+- [cnaContainer (CNA Content)](../programmes/cve/record-format/cna-container.md)
 
 [^cve-program]: CVE Program / The MITRE Corporation, CVE Numbering Authority (CNA) Operational Rules Version 4.0, https://www.cve.org/ResourcesSupport/AllResources/CNARules
-[^iso-iec-29147]: International Organization for Standardization (ISO) / IEC, ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure, https://www.iso.org/standard/72311.html

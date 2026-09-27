@@ -1,16 +1,18 @@
 ---
 type: Procedure
-title: Intake Channels and Security.txt
+title: 'Process: Intake Channels and Security.txt'
 description: Establishing discoverable intake mechanisms (RFC 9116 security.txt, PGP
   keys, web forms) for vulnerability submission.
 category: procedure
 tags:
 - cvd
 - process
-- intake-and-reporting
+- intake
+- security-txt
+- rfc-9116
 status: draft
 generated:
-  by: agent:antigravity
+  by: agent:kb-researcher-writer
   at: '2026-09-27T00:00:00Z'
 stale_after: '2027-12-31T00:00:00Z'
 sources:
@@ -20,31 +22,43 @@ sources:
     \ Vulnerability disclosure"
   author: International Organization for Standardization (ISO) / IEC
   last_modified: '2018-10-01T00:00:00Z'
-- id: iso-iec-30111
-  resource: https://www.iso.org/standard/72312.html
-  title: "ISO/IEC 30111:2019 Information technology \u2014 Security techniques \u2014\
-    \ Vulnerability handling processes"
-  author: International Organization for Standardization (ISO) / IEC
-  last_modified: '2019-10-01T00:00:00Z'
 x-cvd:
   jurisdiction: International
   authority_level: rule
   instrument_status: in_force
-  provision: ISO/IEC 29147 Clause 5
+  provision: ISO/IEC 29147 Clause 5, RFC 9116
   checked_at: '2026-09-27T00:00:00Z'
 ---
 
 # Summary
 
-**Intake Channels and Security.txt** across the vulnerability disclosure lifecycle[^iso-iec-29147][^iso-iec-30111].
+**Intake and Reporting** is the initial phase of the coordinated vulnerability disclosure lifecycle, establishing secure, publicly discoverable channels through which external security researchers (finds) can submit vulnerability reports to a vendor or coordinator[^iso-iec-29147].
 
-Establishing discoverable intake mechanisms (RFC 9116 security.txt, PGP keys, web forms) for vulnerability submission.
+# Modern Intake Standards: RFC 9116 (security.txt)
 
-# Key Stages and Rules
-Standard operational workflow ensuring responsible coordination prior to public exposure.
+The IETF standard **RFC 9116** specifies a machine-readable text file hosted at `/.well-known/security.txt` containing contact and policy details:
+
+```text
+Contact: mailto:psirt@example.com
+Contact: https://example.com/security/report
+Encryption: https://example.com/pgp-key.asc
+Acknowledgments: https://example.com/security/hall-of-fame
+Policy: https://example.com/security/cvd-policy
+Preferred-Languages: en, de, fr
+Canonical: https://example.com/.well-known/security.txt
+Expires: 2027-12-31T23:59:59.000Z
+```
+
+# Intake Handling Procedures
+
+1. **Receipt Acknowledgment**: The vendor PSIRT should automatically acknowledge report submission within **24–72 hours**.
+2. **Encrypted Communications**: Provide PGP keys, S/MIME, or TLS-encrypted portal interfaces to protect vulnerability details in transit.
+3. **Safe-Harbor Commitment**: Publicly commit to good-faith researcher safe harbor, promising not to initiate civil or criminal legal action against researchers adhering to the policy.
 
 # Related concepts
-- [Process Index](index.md)
+- [Triage, Reproduction, and Impact Assessment](triage-and-validation.md)
+- [Finder (Security Researcher)](../roles/finder.md)
+- [Vendor PSIRT](../roles/vendor-psirt.md)
+- [Legal Safe Harbor](../glossary/safe-harbor.md)
 
 [^iso-iec-29147]: International Organization for Standardization (ISO) / IEC, ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure, https://www.iso.org/standard/72311.html
-[^iso-iec-30111]: International Organization for Standardization (ISO) / IEC, ISO/IEC 30111:2019 Information technology — Security techniques — Vulnerability handling processes, https://www.iso.org/standard/72312.html
