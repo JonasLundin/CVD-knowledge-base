@@ -1,7 +1,8 @@
 ---
 type: Metric
 title: Common Vulnerability Scoring System (CVSS) v3.1
-description: Quantitative severity scoring specification evaluating base, temporal, and environmental metric groups to assess software vulnerability characteristics.
+description: Quantitative severity scoring specification evaluating base, temporal,
+  and environmental metric groups to assess software vulnerability characteristics.
 category: metric
 tags:
 - cvd
@@ -15,16 +16,11 @@ generated:
   at: '2026-09-27T00:00:00Z'
 stale_after: '2027-12-31T00:00:00Z'
 sources:
-- id: first-cvss-v4
-  resource: https://www.first.org/cvss/v4-0/specification-document
-  title: Common Vulnerability Scoring System (CVSS) Specification Document Version 4.0
+- id: first-cvss-v3-1
+  resource: https://www.first.org/cvss/v3.1
+  title: Common Vulnerability Scoring System Version 3.1 (CVSS v3.1) Specification
   author: Forum of Incident Response and Security Teams (FIRST)
-  last_modified: '2023-11-01T00:00:00Z'
-- id: iso-iec-29147
-  resource: https://www.iso.org/standard/72311.html
-  title: "ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure"
-  author: International Organization for Standardization (ISO) / IEC
-  last_modified: '2018-10-01T00:00:00Z'
+  last_modified: '2019-06-10T00:00:00Z'
 x-cvd:
   jurisdiction: International
   authority_level: standard
@@ -35,7 +31,7 @@ x-cvd:
 
 # Summary
 
-The **Common Vulnerability Scoring System (CVSS) Version 3.1** is an open, industry-standard scoring specification maintained by the Forum of Incident Response and Security Teams (FIRST) to assess and communicate the fundamental technical severity of information technology vulnerabilities[^first-cvss-v4]. Adopted globally across security advisories, vulnerability scanners, and compliance frameworks, CVSS v3.1 provides an objective, repeatable methodology to compute numerical severity scores ranging from 0.0 to 10.0[^iso-iec-29147].
+The **Common Vulnerability Scoring System (CVSS) Version 3.1** is an open, industry-standard scoring specification maintained by the Forum of Incident Response and Security Teams (FIRST) to assess and communicate the fundamental technical severity of information technology vulnerabilities[^first-cvss-v3-1]. Adopted globally across security advisories, vulnerability scanners, and compliance frameworks, CVSS v3.1 provides an objective, repeatable methodology to compute numerical severity scores ranging from 0.0 to 10.0.
 
 CVSS v3.1 is explicitly designed to measure technical severity—the intrinsic difficulty and direct impact of an exploit—rather than dynamic threat likelihood or enterprise risk. In vulnerability disclosure, CVSS v3.1 vector strings serve as universal shorthand for communicating exploit constraints and impact boundaries.
 
@@ -119,9 +115,7 @@ The Base score is computed by combining Exploitability and Impact sub-scores:
 
 # Limitations & The Evolution to CVSS v4.0
 
-Despite its widespread adoption, industry operational experience revealed critical limitations in CVSS v3.1 that drove the development of CVSS v4.0[^first-cvss-v4]:
-- **Severity vs. Risk Confusion**: Consumers frequently treat CVSS Base scores as risk scores, leading to patch fatigue by treating all 9.8 vulnerabilities as equally urgent, even when no exploit exists in the wild.
-- **Ambiguity in the Scope Metric**: The `Scope: Changed` definition created extensive debate among analysts regarding whether a guest-to-host VM escape, microservice call, or database injection warranted a Scope change.
+Despite its widespread adoption, industry operational experience revealed critical limitations in CVSS v3.1 that drove the development of CVSS v4.0- **Ambiguity in the Scope Metric**: The `Scope: Changed` definition created extensive debate among analysts regarding whether a guest-to-host VM escape, microservice call, or database injection warranted a Scope change.
 - **Inability to Model OT/ICS Safety**: CVSS v3.1 evaluates only CIA (Confidentiality, Integrity, Availability), failing to represent operational technology impacts such as physical device damage or human safety hazards.
 - **Conflation of Attack Conditions**: High Attack Complexity was frequently misapplied to vulnerabilities that simply required specific network topologies rather than specialized cryptographic or timing race capabilities.
 
@@ -146,5 +140,4 @@ In Coordinated Vulnerability Disclosure (CVD) operations:
 - [CNA Container](../../programmes/cve/record-format/cna-container.md)
 - [CSAF Security Advisory](../../formats/csaf/csaf-security-advisory.md)
 
-[^first-cvss-v4]: Forum of Incident Response and Security Teams (FIRST), Common Vulnerability Scoring System (CVSS) Specification Document Version 4.0, https://www.first.org/cvss/v4-0/specification-document
-[^iso-iec-29147]: International Organization for Standardization (ISO) / IEC, ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure, https://www.iso.org/standard/72311.html
+[^first-cvss-v3-1]: Forum of Incident Response and Security Teams (FIRST), Common Vulnerability Scoring System Version 3.1 (CVSS v3.1) Specification, https://www.first.org/cvss/v3.1

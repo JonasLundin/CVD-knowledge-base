@@ -22,7 +22,7 @@ sources:
     \ Vulnerability handling processes"
   author: International Organization for Standardization (ISO) / IEC
   last_modified: '2019-10-01T00:00:00Z'
-- id: first-cvss-v4
+- id: first-cvss-v4-0
   resource: https://www.first.org/cvss/v4-0/specification-document
   title: Common Vulnerability Scoring System (CVSS) Specification Document Version
     4.0
@@ -59,7 +59,7 @@ x-cvd:
 
 # Triage Criteria
 - **Reproducibility**: Confirmation that the exploit reproduces reliably on supported software branches.
-- **Severity Scoring**: Calculation of the official CVSS v4.0 vector[^first-cvss-v4].
+- **Severity Scoring**: Calculation of the official CVSS v4.0 vector[^first-cvss-v4-0].
 - **Component Mapping**: Identification of exact upstream/downstream components using Package URLs.
 
 # Related concepts
@@ -69,4 +69,4 @@ x-cvd:
 - [Common Weakness Enumeration (CWE)](../reference-data/cwe/cwe.md)
 
 [^iso-iec-30111]: International Organization for Standardization (ISO) / IEC, ISO/IEC 30111:2019 Information technology — Security techniques — Vulnerability handling processes, https://www.iso.org/standard/72312.html
-[^first-cvss-v4]: Forum of Incident Response and Security Teams (FIRST), Common Vulnerability Scoring System (CVSS) Specification Document Version 4.0, https://www.first.org/cvss/v4-0/specification-document
+[^first-cvss-v4-0]: Forum of Incident Response and Security Teams (FIRST), Common Vulnerability Scoring System (CVSS) Specification Document Version 4.0, https://www.first.org/cvss/v4-0/specification-document

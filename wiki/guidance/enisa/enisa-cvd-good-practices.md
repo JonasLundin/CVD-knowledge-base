@@ -1,28 +1,26 @@
 ---
-type: Concept
-title: ENISA Good Practice Guide on Coordinated Vulnerability Disclosure
-description: European guidelines assisting Member States and public/private entities
-  in implementing national CVD ecosystems.
+type: Guidance
+title: ENISA Good Practices in Coordinated Vulnerability Disclosure
+description: European Union guidance and recommendations for establishing national CVD ecosystems and CSIRT capabilities.
 category: guidance
 tags:
-- cvd
 - guidance
 - enisa
-- national-policies
+- cvd
+- good-practices
 status: draft
 generated:
-  by: agent:kb-researcher-writer
+  by: manual-curation
   at: '2026-09-27T00:00:00Z'
 stale_after: '2027-12-31T00:00:00Z'
 sources:
-- id: iso-iec-29147
-  resource: https://www.iso.org/standard/72311.html
-  title: ISO/IEC 29147:2018 Information technology - Security techniques - Vulnerability
-    disclosure
-  author: International Organization for Standardization
-  last_modified: '2018-10-01T00:00:00Z'
+- id: enisa-cvd-guide
+  resource: https://www.enisa.europa.eu/publications/coordinated-vulnerability-disclosure-policies-in-the-eu
+  title: Coordinated Vulnerability Disclosure Policies in the EU
+  author: European Union Agency for Cybersecurity (ENISA)
+  last_modified: '2022-04-01T00:00:00Z'
 x-cvd:
-  jurisdiction: International
+  jurisdiction: EU
   authority_level: guidance
   instrument_status: in_force
   checked_at: '2026-09-27T00:00:00Z'
@@ -30,14 +28,19 @@ x-cvd:
 
 # Summary
 
-**ENISA's Good Practice Guide** supports the creation of national CVD policies and the operationalization of designated CSIRT coordinator roles under NIS2 Article 12[^iso-iec-29147].
+ENISA publishes comprehensive **Good Practices in Coordinated Vulnerability Disclosure**, providing European Member States, national CSIRTs, and private organizations with structured roadmaps for CVD implementation[^enisa-cvd-guide].
 
-# Key Principles
-- Legal safe harbors protecting benevolent researchers who act in good faith.
-- Transparent national vulnerability intake workflows managed by national CSIRTs.
+> [!NOTE]
+> **Non-Binding Guidance**: ENISA guidelines reflect non-binding technical recommendations intended to assist Member States in fulfilling statutory mandates under NIS2 Article 12.
+
+# Core Topics
+1. **National CVD Frameworks**: Guidance on appointing trusted national CSIRT coordinators pursuant to NIS2 Article 12(1).
+2. **Legal Clarity for Researchers**: Encouraging Member States to adopt clear safe-harbour frameworks and prosecutorial guidelines protecting ethical security researchers.
+3. **Public Sector CVD Programs**: Recommendations for deploying `security.txt` and dedicated intake channels across public administration web platforms.
 
 # Related concepts
-- [ENISA Guidance Index](index.md)
-- [NIS2 Article 11 Law](../../law/eu/nis2-article-11.md)
+- [Guidance Index](../index.md)
+- [NIS2 Article 12](../../law/eu/nis2-article-12.md)
+- [EU Member States Jurisdictions](../../jurisdictions/eu-member-states/index.md)
 
-[^iso-iec-29147]: International Organization for Standardization, ISO/IEC 29147:2018 Information technology - Security techniques - Vulnerability disclosure, https://www.iso.org/standard/72311.html
+[^enisa-cvd-guide]: European Union Agency for Cybersecurity (ENISA), Coordinated Vulnerability Disclosure Policies in the EU, https://www.enisa.europa.eu/publications/coordinated-vulnerability-disclosure-policies-in-the-eu

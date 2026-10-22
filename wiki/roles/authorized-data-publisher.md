@@ -16,11 +16,11 @@ generated:
   at: '2026-09-27T00:00:00Z'
 stale_after: '2027-12-31T00:00:00Z'
 sources:
-- id: cve-program
-  resource: https://www.cve.org/ResourcesSupport/AllResources/CNARules
-  title: CVE Numbering Authority (CNA) Operational Rules Version 4.0
-  author: CVE Program / The MITRE Corporation
-  last_modified: '2024-03-01T00:00:00Z'
+- id: cve-operational-rules-4-2-0
+  resource: https://www.cve.org/Resources/Roles/Cnas/CNA_Rules_v4.2.0.pdf
+  title: CVE Numbering Authority (CNA) Operational Rules, Version 4.2.0
+  author: CVE Program
+  last_modified: '2026-08-25T00:00:00Z'
 x-cvd:
   jurisdiction: International
   authority_level: rule
@@ -31,7 +31,7 @@ x-cvd:
 
 # Summary
 
-An **Authorized Data Publisher (ADP)** is a specialized organization officially designated by the CVE Program to enrich published CVE records by submitting data to dedicated `adp` containers without altering the authoring CNA's primary `cna` container[^cve-program].
+An **Authorized Data Publisher (ADP)** is a specialized organization officially designated by the CVE Program to enrich published CVE records by submitting data to dedicated `adp` containers without altering the authoring CNA's primary `cna` container[^cve-operational-rules-4-2-0].
 
 # ADP Operational Role: The CISA Vulnrichment Pilot
 
@@ -46,4 +46,4 @@ CISA serves as the premier Authorized Data Publisher, operating the *Vulnrichmen
 - [The CVE Program](../programmes/cve-program.md)
 - [CISA Known Exploited Vulnerabilities (KEV) Catalog](../reference-data/kev/kev.md)
 
-[^cve-program]: CVE Program / The MITRE Corporation, CVE Numbering Authority (CNA) Operational Rules Version 4.0, https://www.cve.org/ResourcesSupport/AllResources/CNARules
+[^cve-operational-rules-4-2-0]: CVE Program, CVE Numbering Authority (CNA) Operational Rules, Version 4.2.0, https://www.cve.org/Resources/Roles/Cnas/CNA_Rules_v4.2.0.pdf

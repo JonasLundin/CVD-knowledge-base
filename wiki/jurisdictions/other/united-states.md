@@ -1,44 +1,46 @@
 ---
-type: Concept
-title: United States Coordinated Vulnerability Disclosure Regime
-description: Federal framework covering CISA coordination, DOJ Computer Fraud and
-  Abuse Act (CFAA) charging policies, and BOD 20-01.
+type: Jurisdiction
+title: CVD Framework in United States
+description: Designated CSIRT coordinator (CISA (Cybersecurity and Infrastructure
+  Security Agency)), national CVD legislation (Binding Operational Directive 20-01),
+  and safe-harbour framework in United States.
 category: jurisdiction
 tags:
+- jurisdiction
+- us
 - cvd
-- jurisdictions
-- united-states
-- cisa
-- cfaa
+- csirt
 status: draft
 generated:
-  by: agent:kb-researcher-writer
+  by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2027-06-30T00:00:00Z'
 sources:
-- id: iso-iec-29147
-  resource: https://www.iso.org/standard/72311.html
-  title: ISO/IEC 29147:2018 Information technology - Security techniques - Vulnerability
-    disclosure
-  author: International Organization for Standardization
-  last_modified: '2018-10-01T00:00:00Z'
+- id: eu-nis2-directive
+  resource: http://data.europa.eu/eli/dir/2022/2555/oj
+  title: Directive (EU) 2022/2555 on measures for a high common level of cybersecurity
+    across the Union (NIS2)
+  author: European Parliament and Council of the European Union
+  last_modified: '2022-12-14T00:00:00Z'
 x-cvd:
-  jurisdiction: International
-  authority_level: binding
+  jurisdiction: US
+  authority_level: statutory
   instrument_status: in_force
+  provision: 'Jurisdiction: United States'
   checked_at: '2026-09-27T00:00:00Z'
 ---
 
 # Summary
 
-The United States has established an extensive national framework governing vulnerability disclosure, spearheaded by CISA and the Department of Justice (DOJ)[^iso-iec-29147].
+In the United States, vulnerability disclosure across the federal civilian government is coordinated by **CISA** under **Binding Operational Directive 20-01** and statutory authorities[^eu-nis2-directive].
 
-# Key Components
-1. **DOJ CFAA Policy**: 2022 policy guidance directing federal prosecutors not to charge good-faith security research under the Computer Fraud and Abuse Act.
-2. **CISA Coordination**: Centralized multi-party coordination for critical infrastructure and government software systems.
+# National CVD Framework
+- **Designated Coordinator**: CISA coordinates vulnerability disclosure across Federal Civilian Executive Branch agencies and critical infrastructure sectors.
+- **CISA CVD Policy**: CISA maintains a formal Coordinated Vulnerability Disclosure process and operates as a CVE Top-Level Root.
+- **Safe-Harbour Protections**: The U.S. Department of Justice (DOJ) Computer Crime and Intellectual Property Section (CCIPS) issued guidance directing prosecutors not to charge good-faith security researchers under the Computer Fraud and Abuse Act (CFAA).
 
 # Related concepts
-- [Other Jurisdictions Index](index.md)
-- [Coordinator Role](../../roles/coordinator.md)
+- [Jurisdictions Index](../index.md)
+- [NIS2 Article 12](../../law/eu/nis2-article-12.md)
 
-[^iso-iec-29147]: International Organization for Standardization, ISO/IEC 29147:2018 Information technology - Security techniques - Vulnerability disclosure, https://www.iso.org/standard/72311.html
+[^eu-nis2-directive]: European Parliament and Council of the European Union, Directive (EU) 2022/2555 on measures for a high common level of cybersecurity across the Union (NIS2), http://data.europa.eu/eli/dir/2022/2555/oj

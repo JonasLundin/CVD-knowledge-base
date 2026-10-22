@@ -16,12 +16,11 @@ generated:
   at: '2026-09-27T00:00:00Z'
 stale_after: '2027-12-31T00:00:00Z'
 sources:
-- id: iso-iec-29147
-  resource: https://www.iso.org/standard/72311.html
-  title: "ISO/IEC 29147:2018 Information technology \u2014 Security techniques \u2014\
-    \ Vulnerability disclosure"
-  author: International Organization for Standardization (ISO) / IEC
-  last_modified: '2018-10-01T00:00:00Z'
+- id: first-cvd-guide
+  resource: https://www.first.org/global/sigs/vulnerability-coordination/multiparty/guidelines-v1.1
+  title: Guidelines for Coordinated Vulnerability Disclosure (FIRST CVD v1.1)
+  author: Forum of Incident Response and Security Teams (FIRST)
+  last_modified: '2020-09-01T00:00:00Z'
 x-cvd:
   jurisdiction: International
   authority_level: rule
@@ -32,7 +31,7 @@ x-cvd:
 
 # Summary
 
-**Intake and Reporting** is the initial phase of the coordinated vulnerability disclosure lifecycle, establishing secure, publicly discoverable channels through which external security researchers (finds) can submit vulnerability reports to a vendor or coordinator[^iso-iec-29147].
+**Intake and Reporting** is the initial phase of the coordinated vulnerability disclosure lifecycle, establishing secure, publicly discoverable channels through which external security researchers (finds) can submit vulnerability reports to a vendor or coordinator[^first-cvd-guide].
 
 # Modern Intake Standards: RFC 9116 (security.txt)
 
@@ -61,4 +60,4 @@ Expires: 2027-12-31T23:59:59.000Z
 - [Vendor PSIRT](../roles/vendor-psirt.md)
 - [Legal Safe Harbor](../glossary/safe-harbor.md)
 
-[^iso-iec-29147]: International Organization for Standardization (ISO) / IEC, ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure, https://www.iso.org/standard/72311.html
+[^first-cvd-guide]: Forum of Incident Response and Security Teams (FIRST), Guidelines for Coordinated Vulnerability Disclosure (FIRST CVD v1.1), https://www.first.org/global/sigs/vulnerability-coordination/multiparty/guidelines-v1.1

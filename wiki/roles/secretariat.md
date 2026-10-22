@@ -16,11 +16,11 @@ generated:
   at: '2026-09-27T00:00:00Z'
 stale_after: '2027-12-31T00:00:00Z'
 sources:
-- id: cve-program
-  resource: https://www.cve.org/ResourcesSupport/AllResources/CNARules
-  title: CVE Numbering Authority (CNA) Operational Rules Version 4.0
-  author: CVE Program / The MITRE Corporation
-  last_modified: '2024-03-01T00:00:00Z'
+- id: cve-operational-rules-4-2-0
+  resource: https://www.cve.org/Resources/Roles/Cnas/CNA_Rules_v4.2.0.pdf
+  title: CVE Numbering Authority (CNA) Operational Rules, Version 4.2.0
+  author: CVE Program
+  last_modified: '2026-08-25T00:00:00Z'
 x-cvd:
   jurisdiction: International
   authority_level: rule
@@ -31,7 +31,7 @@ x-cvd:
 
 # Summary
 
-The **CVE Program Secretariat** is the administrative and operational entity—contractually executed by The MITRE Corporation—responsible for day-to-day management of the CVE Program infrastructure, registries, and CNA community support[^cve-program].
+The **CVE Program Secretariat** is the administrative and operational entity—contractually executed by The MITRE Corporation—responsible for day-to-day management of the CVE Program infrastructure, registries, and CNA community support[^cve-operational-rules-4-2-0].
 
 # Core Secretariat Responsibilities
 - Operating and maintaining the **CVE Services API** and the global CVE Record repository.
@@ -42,6 +42,6 @@ The **CVE Program Secretariat** is the administrative and operational entity—c
 # Related concepts
 - [The CVE Program](../programmes/cve-program.md)
 - [CVE Numbering Authority (CNA)](cna.md)
-- [Section 6: Dispute Resolution and Appeals](../programmes/cve/cna-operational-rules/section-6-dispute-resolution.md)
+- [Section 6: Dispute Resolution and Appeals](../programmes/cve/cna-operational-rules/section-4-cna-operational-rules.md)
 
-[^cve-program]: CVE Program / The MITRE Corporation, CVE Numbering Authority (CNA) Operational Rules Version 4.0, https://www.cve.org/ResourcesSupport/AllResources/CNARules
+[^cve-operational-rules-4-2-0]: CVE Program, CVE Numbering Authority (CNA) Operational Rules, Version 4.2.0, https://www.cve.org/Resources/Roles/Cnas/CNA_Rules_v4.2.0.pdf

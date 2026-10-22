@@ -1,7 +1,9 @@
 ---
 type: Metric
 title: Stakeholder-Specific Vulnerability Categorization (SSVC)
-description: Role-tailored decision-tree framework authored by Carnegie Mellon SEI and CISA that prioritizes vulnerability remediation based on exploitation, exposure, and mission impact.
+description: Role-tailored decision-tree framework authored by Carnegie Mellon SEI
+  and CISA that prioritizes vulnerability remediation based on exploitation, exposure,
+  and mission impact.
 category: metric
 tags:
 - cvd
@@ -15,16 +17,11 @@ generated:
   at: '2026-09-27T00:00:00Z'
 stale_after: '2027-12-31T00:00:00Z'
 sources:
-- id: first-cvss-v4
-  resource: https://www.first.org/cvss/v4-0/specification-document
-  title: Common Vulnerability Scoring System (CVSS) Specification Document Version 4.0
-  author: Forum of Incident Response and Security Teams (FIRST)
+- id: certcc-ssvc
+  resource: https://certcc.github.io/SSVC/
+  title: Stakeholder-Specific Vulnerability Categorization (SSVC)
+  author: Carnegie Mellon University Software Engineering Institute (CERT/CC)
   last_modified: '2023-11-01T00:00:00Z'
-- id: iso-iec-29147
-  resource: https://www.iso.org/standard/72311.html
-  title: "ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure"
-  author: International Organization for Standardization (ISO) / IEC
-  last_modified: '2018-10-01T00:00:00Z'
 x-cvd:
   jurisdiction: International
   authority_level: standard
@@ -35,7 +32,7 @@ x-cvd:
 
 # Summary
 
-**Stakeholder-Specific Vulnerability Categorization (SSVC)** is a conceptual framework and decision-tree methodology created by the Software Engineering Institute (SEI) at Carnegie Mellon University in partnership with the Cybersecurity and Infrastructure Security Agency (CISA)[^first-cvss-v4]. Departing fundamentally from continuous numerical scoring systems like CVSS, SSVC evaluates vulnerabilities through qualitative, contextual decision trees tailored to the specific role of the decision-maker—categorizing actions into discrete operational outcomes: **Track**, **Track\***, **Attend**, or **Act**[^iso-iec-29147].
+**Stakeholder-Specific Vulnerability Categorization (SSVC)** is a conceptual framework and decision-tree methodology created by the Software Engineering Institute (SEI) at Carnegie Mellon University in partnership with the Cybersecurity and Infrastructure Security Agency (CISA)[^certcc-ssvc]. Departing fundamentally from continuous numerical scoring systems like CVSS, SSVC evaluates vulnerabilities through qualitative, contextual decision trees tailored to the specific role of the decision-maker—categorizing actions into discrete operational outcomes: **Track**, **Track\***, **Attend**, or **Act**.
 
 SSVC addresses the core structural flaw of traditional vulnerability management: that a vulnerability's urgency depends on the stakeholder's context. A software developer (Supplier), an enterprise IT department (Deployer), and a national CSIRT (Coordinator) require fundamentally different operational decisions when confronted with the same CVE.
 
@@ -159,5 +156,4 @@ Security orchestration platforms execute SSVC logic using open-source Python pac
 - [ADP Container](../../programmes/cve/record-format/adp-container.md)
 - [Vendor PSIRT Role](../../roles/vendor-psirt.md)
 
-[^first-cvss-v4]: Forum of Incident Response and Security Teams (FIRST), Common Vulnerability Scoring System (CVSS) Specification Document Version 4.0, https://www.first.org/cvss/v4-0/specification-document
-[^iso-iec-29147]: International Organization for Standardization (ISO) / IEC, ISO/IEC 29147:2018 Information technology — Security techniques — Vulnerability disclosure, https://www.iso.org/standard/72311.html
+[^certcc-ssvc]: Carnegie Mellon University Software Engineering Institute (CERT/CC), Stakeholder-Specific Vulnerability Categorization (SSVC), https://certcc.github.io/SSVC/
